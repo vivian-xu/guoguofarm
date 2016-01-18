@@ -1,0 +1,32 @@
+
+#footer-nav {
+    padding: 0rem;
+}
+#footer-nav li {
+    text-align: center;
+    margin-left: 0;
+}
+#footer-nav li {
+    border: 1px solid #732B2B;
+
+}
+#footer-nav li:hover {
+    background-color: #e3f2dd;
+}
+#footer-nav li:active {
+    background-color: #0e90d2;
+}
+.msg-dot {
+    position: relative;
+}
+.msg-dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background-color: #f74c31;
+    top: -5px;
+    right: -5px;
+}
