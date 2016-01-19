@@ -1,4 +1,4 @@
-
+/* footer-nav */
 #footer-nav {
     padding: 0rem;
 }
@@ -30,3 +30,23 @@
     top: -5px;
     right: -5px;
 }
+
+/* top-nav   */
+#top-nav {
+    text-align: center;
+    padding: 0px;
+}
+#top-nav a, #top-nav form {
+    height: 3rem;
+    line-height: 3rem;
+    border: 1px rgba(121, 56, 56, 0.48) solid;
+    border-style: none solid solid none;
+}
+#top-nav a {
+    vertical-align: middle;
+    margin: 0px;
+}
+.nav-link.icon {
+    font-size: 1.5rem;
+}
+
