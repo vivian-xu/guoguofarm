@@ -1,25 +1,56 @@
 $nav-height: 3rem;
-$nav-border:  1px rgba(121, 56,  56, 0.48) solid;
-$topTable-border-style: none solid solid none;
+$nav-border-color: #732b2b;
+$nav-bg: #fff;
+$nav-bg-hover: #e3f3dd:
+$nav-bg-active: #0e90d2;
 /* top-nav */
-.nav-top {
-    text-align: center;
-    padding: 0px;
-    
-    form {
-        height: $nav-height;
-        line-height: $nav-height;
-        border: $nav-border; 
-        border-style: $topTable-border-style;
-    }
+.nav-top, .nav-footer {
+    padding: 0;
+    background-color: $nav-bg; 
 
-    a {
-        @extend form;
-        vertical-align:middle;
-        margin: 0px;
+    .nav-item{
+        text-align: center;
+        margin-left: 0;
+        border: 1px $nav-border-color;
+
+        &:hover {
+           background-color: $nav-bg-hover;
+        } 
+
+        &:active {
+            background-color: $nav-bg-active;
+        }
     }
 }
 
-.nav-link.icon {
-    font-size: 1.5rem;
+.nav-top {
+    .nav-item {
+            height: $nav-height;
+            line-height: $nav-height;
+            border-bottom: solid;
+    }
+    
+    .nav-link.icon {
+        font-size: 1.25rem;
+    }
+}
+
+.nav-footer .nav-item {
+    border-top: solid;
+}
+
+.msg-dot {
+    position: relative;
+    
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background-color: #f74c31;
+        top: -5px;
+        right: -5px;    
+    }
 }
