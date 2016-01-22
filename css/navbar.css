@@ -1,0 +1,118 @@
+html {
+    font-size: 16px;
+}
+/*   top-nav   */
+.nav-top {
+    top: 0;
+    left: 0;
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+
+    background-color: rgba(228, 38, 38, 0.8);
+}
+.navbar, 
+.nav-list {
+    width: 100%;
+}
+.nav-item-back,
+.nav-item-icon {
+    width: 10%;
+}
+.nav-item-input {
+    width: 80%;
+}
+.nav-top .navbar-form > .nav-input,
+.nav-top .navbar-form > .nav-btn {
+    box-sizing: border-box;
+    padding: 4px 8px;
+    border: 1px solid #efe;
+    border-radius: 1px;
+}
+.nav-top .navbar-form > .nav-btn {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+
+
+/*    flex 布局  */
+
+/*
+.nav-list {
+    display: flex;    
+    display: box;      
+    display: -moz-box;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.nav-list > [class*= "nav-item"] {
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+}
+*/
+
+
+
+
+/*  非 flex 布局 */
+.nav-list {
+    font-size: 0;     /* 修复 inline-block 1px 的缝隙*/
+}
+
+.nav-list > [class*= "nav-item"] {
+   display: inline-block;
+   padding: .5rem 0;
+   font-size: 16px;
+   text-align: center;
+}
+
+
+/**  nav-footer  **/
+.nav-footer {
+    bottom: 0;
+    left: 0;
+}
+
+.nav-footer .nav-item {
+    width: 25%;
+}
+.nav-footer .nav-item:hover {
+    background-color: #e3f2dd;
+}
+.nav-footer .nav-item:active {
+    background-color: #0e90d2;
+}
+
+/*  nav-footer 提示的小红点  */
+.msg-dot {
+    position: relative;
+}
+.msg-dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background-color: #FFEB3B;
+    top: -5px;
+    right: -5px;
+}
