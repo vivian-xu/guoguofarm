@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--
+    Ask IE to behave like a modern browser
+    See: https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible
+    -->   
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- end: Mobile Specific -->
+
+	<!-- end: CSS -->
+    <style type="text/css">
+        .out-block {
+            margin: 300px;
+        }
+        .block {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(48, 62, 165, 0.45);
+            margin-left: 50px;
+        }
+
+        .block:before {
+            display: block;
+            position: relative;
+            left: -5px;
+            top: -5px;
+            content: "";
+            width: 110px;
+            height: 110px;
+            border: 1px solid #000;
+        }
+        .btn {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <ul class="out-block">
+        <li class="block"></li>
+        <li class="block"><input type="button" class="btn" style="height: 200px;"/></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+    </ul>
+</body>
