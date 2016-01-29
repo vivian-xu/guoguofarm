@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('./icomoon.eot?pwg8e6');
+    src:    url('./icomoon.eot?pwg8e6#iefix') format('embedded-opentype'),
+        url('./icomoon.ttf?pwg8e6') format('truetype'),
+        url('./icomoon.woff?pwg8e6') format('woff'),
+        url('./icomoon.svg?pwg8e6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-star-empty:before {
+    content: "\e903";
+}
+
+.icon-star-full:before {
+    content: "\e904";   /* \e90b */
+}
+
+.icon-heart:before {
+    content: "\e905";  /* \e90a */
+}
+.icon-happy2:before {
+    content: "\e906";   /* \e05b */
+}
+
+.icon-wink2:before {
+    content: "\e908";
+}
+.icon-evil:before {
+    content: "\e909";   /* \e90e */
+}
+.icon-point-left:before {
+    content: "\e90a";
+}

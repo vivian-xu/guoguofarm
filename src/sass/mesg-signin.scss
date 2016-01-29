@@ -1,0 +1,32 @@
+.table{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    .content {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 10%;
+
+        .mesg {
+            margin-bottom: 15%;
+            line-height: 1.5em;
+            font-size: 20px;
+             
+            .user-icon {
+                @import "compass/css3/inline-block";
+                @include inline-block;
+                font-size: 40px;
+                color: #f43530;
+            }
+        }
+
+        .user-btn {
+            width: 50%;
+            &:hover {
+                background-color: rgba(228,54,54,1);
+            }
+        }
+    }
+}

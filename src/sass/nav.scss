@@ -1,0 +1,99 @@
+@import "compass/css3/box-sizing";
+@mixin background-colors($normal, $hover, $active) {
+    background-color: $normal;
+    @if $hover {
+        &:hover {
+        background-color: $hover;
+        }
+    }
+    @if $active {
+        &:active {
+        background-color: $active;
+        }
+    }
+}
+$navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);
+$nav-bg: rgba(228, 38, 38, 0.8);
+$nav-bg-hover: #e3f3dd;
+$nav-bg-active: #0e90d2;
+
+
+html {
+    font-size: 16px;
+}
+.navbar,
+.nav-list {
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    background-color: $nav-bg; 
+
+    .nav-list {
+        font-size: 0;
+    
+        > [class*= "nav-item"] {
+            @import "compass/css3/inline-block";
+            @include inline-block;
+            padding: .5rem 0;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
+/*   nav-top    */
+.nav-top {
+    top: 0;
+    left: 0;
+    
+    .nav-list {
+        @each $top-item, $width in $navTop {
+            > .#{$top-item} {
+                width: $width;
+            }
+        }
+    }
+    
+    .navbar-form > .nav-input{
+        @include box-sizing(border-box);
+        padding: 4px 8px;
+        border: 1px solid #efe;
+        border-radius: 1px;
+    }
+
+    .navbar-form > .nav-btn {
+        @extend .nav-input;
+        background-color: #fff;
+        font-size: 12px;
+    } 
+}
+
+/*   nav-footer   */
+.nav-footer {
+    bottom: 0;
+    left: 0;
+
+    .nav-list > .nav-item {
+        width: 25%;
+        @mixin background-colors($nav-bg, $nav-bg-hover, $nav-bg-active){};
+    }
+}
+
+.msg-dot {
+    position: relative;
+    
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background-color: #f74c31;
+        top: -5px;
+        right: -5px;    
+    }
+}

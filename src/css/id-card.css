@@ -1,0 +1,19 @@
+/* line 1, ../sass/id-card.scss */
+.my-card {
+  width: 100%;
+  height: 80%;
+  background-color: #efe; }
+  /* line 6, ../sass/id-card.scss */
+  .my-card .banner {
+    height: 30%; }
+    /* line 9, ../sass/id-card.scss */
+    .my-card .banner .my-code {
+      width: 7rem;
+      height: 7rem;
+      background-color: #C37D7D; }
+  /* line 16, ../sass/id-card.scss */
+  .my-card .my-info {
+    background-color: #ede; }
+    /* line 19, ../sass/id-card.scss */
+    .my-card .my-info [class*="icon-"] {
+      margin: 0 2rem; }

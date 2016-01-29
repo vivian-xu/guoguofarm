@@ -1,0 +1,16 @@
+/* line 1, ../sass/signin.scss */
+body {
+  padding-top: 3rem; }
+
+/* line 4, ../sass/signin.scss */
+h1 {
+  margin: 2rem auto;
+  font-size: 32px;
+  text-align: center; }
+
+/* line 10, ../sass/signin.scss */
+.weui_cells_form::before {
+  display: none; }
+/* line 14, ../sass/signin.scss */
+.weui_cells_form .weui_label {
+  width: 6em; }

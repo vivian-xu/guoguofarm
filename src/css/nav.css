@@ -1,0 +1,78 @@
+/* line 21, ../sass/nav.scss */
+html {
+  font-size: 16px; }
+
+/* line 24, ../sass/nav.scss */
+.navbar,
+.nav-list {
+  width: 100%; }
+
+/* line 29, ../sass/nav.scss */
+.navbar {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(228, 38, 38, 0.8); }
+  /* line 34, ../sass/nav.scss */
+  .navbar .nav-list {
+    font-size: 0; }
+    /* line 37, ../sass/nav.scss */
+    .navbar .nav-list > [class*="nav-item"] {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      padding: .5rem 0;
+      font-size: 16px;
+      text-align: center; }
+
+/*   nav-top    */
+/* line 48, ../sass/nav.scss */
+.nav-top {
+  top: 0;
+  left: 0; }
+  /* line 54, ../sass/nav.scss */
+  .nav-top .nav-list > .nav-item-back {
+    width: 10%; }
+  /* line 54, ../sass/nav.scss */
+  .nav-top .nav-list > .nav-item-input {
+    width: 80%; }
+  /* line 54, ../sass/nav.scss */
+  .nav-top .nav-list > .nav-item-icon {
+    width: 10%; }
+  /* line 60, ../sass/nav.scss */
+  .nav-top .navbar-form > .nav-input, .nav-top .navbar-form > .nav-btn {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    border: 1px solid #efe;
+    border-radius: 1px; }
+  /* line 67, ../sass/nav.scss */
+  .nav-top .navbar-form > .nav-btn {
+    background-color: #fff;
+    font-size: 12px; }
+
+/*   nav-footer   */
+/* line 75, ../sass/nav.scss */
+.nav-footer {
+  bottom: 0;
+  left: 0; }
+  /* line 79, ../sass/nav.scss */
+  .nav-footer .nav-list > .nav-item {
+    width: 25%; }
+
+/* line 85, ../sass/nav.scss */
+.msg-dot {
+  position: relative; }
+  /* line 88, ../sass/nav.scss */
+  .msg-dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f74c31;
+    top: -5px;
+    right: -5px; }
