@@ -14,28 +14,48 @@
     <link rel="stylesheet" href="./src/css/weui.min.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/fonts2/style.css">
+    <link rel="stylesheet" href="./src/fonts3/style.css">
     <link rel="stylesheet" href="./src/css/id-card.css">
     <!-- end : css -->
 </head>
 <body>
     <div class="my-card">
-        <div class="banner">
-            <p class="my-name"> 王小花 </p>
-            <div class="my-code"><img src=""></div>
+        <div class="top-logo">
+            <p class="logo"> 果果庄园 </p>
         </div>
-        <div class="my-info weui_cells">
-            <ul>
-                <li class="shop-name weui_cell"><span class="icon-home3"></span><a href="" > 我的果园 </a> </li>
+        <div class="banner">
+            <p class="my-name"> 
+                <span class="main-name">王小花</span> <br/>
+                <i>Wang Xiaohua </i><br/>
+                <span class="doing"> 签约代理商</span> 
+            </p>
+        </div>
+        <div class="content">
+            <ul class="my-info weui_cells">
+                <li class="weui_cell"><span class="icon-home3"></span><a href="" class="shop-name-link"> 我的果园 </a> </li>
                 <li class="my-phone weui_cell"><span class="icon-phone"></span>182 293 212 3</li>
                 <li class="shop-address weui_cell"><span class="icon-location"></span>陕西，西安，*** </li>
                 <li class="shop-scope weui_cell"><span class="icon-shop"></span>苹果，橘子，香蕉 </li>
             </ul>
+            <div class="info-code">
+                <p class="code-explain"> 手机扫一扫二维码即可关注 ta 的果园，快来扫吧～</p>
+                <img src="images/code.jpg" class="my-code" />
+            </div>
         </div>
+    </div>
 
+    <div class="share-hidden">
+        <p class="hidden-info">
+            <span class="icon-arrow-up-right2 hidden"></span>
+            点击这里就可以分享了哦～
+        </p>
+        
     </div>
-    <div class="share">
-        <button> 进入店铺 </button>
-        <button> 向分享好友 </button>
-    </div>
+
+    <ul class="footer-share">
+        <li class="share-item"><a href="#" class="link"> 进入店铺 </a></li>
+        <li class="share-item" style="display:none;"><a href="#" class="link"> 二维码 </a></li>
+        <li class="share-item"><a href="#" class="link" > 分享给朋友 </a></li>
+    </ul>
 
 </body>

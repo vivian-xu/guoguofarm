@@ -1,25 +1,160 @@
+$fs-mainName: 35px;
+$fs-logo : 20px;
+$fs-body : 14px; /* my-name  */
+$main-color: #EF7070;
+$main-color-rgba: rgb(239, 79, 79);
+$hover-color: rgb(234, 49, 49);
+$active-color: rgb(244, 53, 48);
+$content_bg: #FFFED0; 
+
 .my-card {
     width: 100%;
-    height: 80%;
-    background-color: #efe;
+    height: 100%;
+    background-color: #9DDE9C;
+    font-size: $fs-body; 
+
+    .top-logo {
+        padding: .5rem;
+        background-color: #EF4F4F;
+
+        .logo {
+            height: $fs-logo * 1.3;
+            line-height: $fs-logo * 1.3;
+            color: #fff;
+            font-size: $fs-logo;
+        }
+    }
 
     .banner {
-        height: 30%;
+        position: relative;
+        height: 25%;
+        text-align: center;
+        background: #9DDE9C url( ../../images/banner_bg1.jpg) repeat fixed top;
 
-        .my-code {
-            width: 7rem;
-            height: 7rem;
-            background-color: #C37D7D;
+        @import "compass/css3/inline-block";
+        .my-name {
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+            padding: 5%;
+            width: 50%;
+            background-color: rgba(255, 251, 251, 0.5);
+            
+            > .main-name{
+                @include inline-block;
+                padding-bottom: 10px;
+                font-size: $fs-mainName;
+            }
+                
+            > .doing {
+                @include inline-block;
+                margin-top: .5rem;
+                font-weight: bold;
+                color: #BD1A1A;
+            }
+        }
+
+    }
+    
+    .content {
+        background-color: $content_bg;
+        text-align: center;
+
+        .my-info {
+            margin: 0;
+            background-color: transparent;
+            
+            .shop-name-link {
+                color: currentColor;
+            }
+
+            [class*="icon-"] {
+                margin: 0 2rem;
+            }   
+        }
+
+        .info-code{
+            padding: 1rem .5rem 2rem .5rem;
+            background-color: #feffb1;
+
+            >.code-explain {
+                font-size: 19px;
+                font-weight: bold;
+                line-height: 1.3;
+                }    
+
+            >.my-code {
+                margin: 1rem;
+                width: 7rem;
+                height: 7rem;
+                background-color: #C37D7D;
+            }
         }
     }
+}
 
-    .my-info {
-        background-color: #ede;
+.share-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 88, 85, 0.61);
 
-        [class*="icon-"] {
-            margin: 0 2rem;
+    .hidden-info {
+        position: relative;
+        top: 30%;
+        font-size: 40px;
+        color: #fff;
+
+        .hidden {
+            display: block;
+            position: absolute;
+            right: 18px;
+            top: -150px;
+            transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            font-size: 60px;
         }
+    }
+}
+
+
+.footer-share {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+
+    .share-item {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        text-align: center;
+        background-color: $main-color-rgba;
+        font-size: 1rem;
+
+        &:not(:last-child) {
+            border: 1px none #fff ; 
+            border-right-style: solid;
+        }
+        &:link { background-color: $main-color-rgba};
+        &:visited { background-color: $main-color-rgba};
+        &:hover { background-color: $hover-color};
+        &:active { background-color: $active-color};
         
+        .link {
+            display: inline-block;
+            padding: .7rem 0;
+            width: 100%;
+            color: #fff;
+        }
     }
-
 }

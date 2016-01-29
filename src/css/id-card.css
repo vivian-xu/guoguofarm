@@ -1,19 +1,147 @@
-/* line 1, ../sass/id-card.scss */
+/* my-name  */
+/* line 10, ../sass/id-card.scss */
 .my-card {
   width: 100%;
-  height: 80%;
-  background-color: #efe; }
-  /* line 6, ../sass/id-card.scss */
-  .my-card .banner {
-    height: 30%; }
-    /* line 9, ../sass/id-card.scss */
-    .my-card .banner .my-code {
-      width: 7rem;
-      height: 7rem;
-      background-color: #C37D7D; }
+  height: 100%;
+  background-color: #9DDE9C;
+  font-size: 14px; }
   /* line 16, ../sass/id-card.scss */
-  .my-card .my-info {
-    background-color: #ede; }
-    /* line 19, ../sass/id-card.scss */
-    .my-card .my-info [class*="icon-"] {
-      margin: 0 2rem; }
+  .my-card .top-logo {
+    padding: .5rem;
+    background-color: #EF4F4F; }
+    /* line 20, ../sass/id-card.scss */
+    .my-card .top-logo .logo {
+      height: 26px;
+      line-height: 26px;
+      color: #fff;
+      font-size: 20px; }
+  /* line 28, ../sass/id-card.scss */
+  .my-card .banner {
+    position: relative;
+    height: 25%;
+    text-align: center;
+    background: #9DDE9C url(../../images/banner_bg1.jpg) repeat fixed top; }
+    /* line 35, ../sass/id-card.scss */
+    .my-card .banner .my-name {
+      position: absolute;
+      left: 20%;
+      bottom: 0;
+      padding: 5%;
+      width: 50%;
+      background-color: rgba(255, 251, 251, 0.5); }
+      /* line 43, ../sass/id-card.scss */
+      .my-card .banner .my-name > .main-name {
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
+        padding-bottom: 10px;
+        font-size: 35px; }
+      /* line 49, ../sass/id-card.scss */
+      .my-card .banner .my-name > .doing {
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
+        margin-top: .5rem;
+        font-weight: bold;
+        color: #BD1A1A; }
+  /* line 59, ../sass/id-card.scss */
+  .my-card .content {
+    background-color: #FFFED0;
+    text-align: center; }
+    /* line 63, ../sass/id-card.scss */
+    .my-card .content .my-info {
+      margin: 0;
+      background-color: transparent; }
+      /* line 67, ../sass/id-card.scss */
+      .my-card .content .my-info .shop-name-link {
+        color: currentColor; }
+      /* line 71, ../sass/id-card.scss */
+      .my-card .content .my-info [class*="icon-"] {
+        margin: 0 2rem; }
+    /* line 76, ../sass/id-card.scss */
+    .my-card .content .info-code {
+      padding: 1rem .5rem 2rem .5rem;
+      background-color: #feffb1; }
+      /* line 80, ../sass/id-card.scss */
+      .my-card .content .info-code > .code-explain {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1.3; }
+      /* line 86, ../sass/id-card.scss */
+      .my-card .content .info-code > .my-code {
+        margin: 1rem;
+        width: 7rem;
+        height: 7rem;
+        background-color: #C37D7D; }
+
+/* line 96, ../sass/id-card.scss */
+.share-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(86, 88, 85, 0.61); }
+  /* line 107, ../sass/id-card.scss */
+  .share-hidden .hidden-info {
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+    color: #fff; }
+    /* line 113, ../sass/id-card.scss */
+    .share-hidden .hidden-info .hidden {
+      display: block;
+      position: absolute;
+      right: 18px;
+      top: -150px;
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      font-size: 60px; }
+
+/* line 129, ../sass/id-card.scss */
+.footer-share {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0; }
+  /* line 136, ../sass/id-card.scss */
+  .footer-share .share-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    background-color: #ef4f4f;
+    font-size: 1rem; }
+    /* line 144, ../sass/id-card.scss */
+    .footer-share .share-item:not(:last-child) {
+      border: 1px none #fff;
+      border-right-style: solid; }
+    /* line 148, ../sass/id-card.scss */
+    .footer-share .share-item:link {
+      background-color: #ef4f4f; }
+    /* line 149, ../sass/id-card.scss */
+    .footer-share .share-item:visited {
+      background-color: #ef4f4f; }
+    /* line 150, ../sass/id-card.scss */
+    .footer-share .share-item:hover {
+      background-color: #ea3131; }
+    /* line 151, ../sass/id-card.scss */
+    .footer-share .share-item:active {
+      background-color: #f43530; }
+    /* line 153, ../sass/id-card.scss */
+    .footer-share .share-item .link {
+      display: inline-block;
+      padding: .7rem 0;
+      width: 100%;
+      color: #fff; }
