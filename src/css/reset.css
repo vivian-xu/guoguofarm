@@ -109,6 +109,12 @@ input, select {
     vertical-align:middle;
 }
 
+.float_right {
+    float: right;
+}
+.float_left {
+    float: left;
+}
 .clearfix:after {
     content: '';
     display: table;

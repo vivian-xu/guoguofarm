@@ -1,93 +1,171 @@
-$fs-mainName: 35px;
-$fs-logo : 20px;
+$fs-mainName: 30px;
+$fs-logo : 30px;
 $fs-body : 14px; /* my-name  */
-$main-color: #EF7070;
-$main-color-rgba: rgb(239, 79, 79);
-$hover-color: rgb(234, 49, 49);
-$active-color: rgb(244, 53, 48);
-$content_bg: #FFFED0; 
+$main_color: #EF7070;
+$main-color-rgba: rgba(239, 79, 79, 0.8);
+$hover-color: rgba(234, 49, 49, 0.8);
+$active-color: rgba(244, 53, 48, 1);
+$content_bg: rgb(244, 243, 221); 
+$ht_top_log: 15%;
+$ht_content: 100%-$ht_top_log;
 
-.my-card {
-    width: 100%;
+
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+@import "compass/css3/transform";
+
+.my_card{
+    overflow: hidden;
     height: 100%;
-    background-color: #9DDE9C;
-    font-size: $fs-body; 
+    min-width: 310px;
+    background-color: $content_bg;
+    font-size: 14px;
 
-    .top-logo {
-        padding: .5rem;
-        background-color: #EF4F4F;
-
-        .logo {
-            height: $fs-logo * 1.3;
-            line-height: $fs-logo * 1.3;
-            color: #fff;
-            font-size: $fs-logo;
-        }
+    .top,
+    .front_card,
+    .left_info,
+    .right_code {
+        @include box-sizing(border-box);
     }
 
-    .banner {
-        position: relative;
-        height: 25%;
+    .main-name,
+    .center_log {
+        @include inline-block;
+    }
+
+    .right_code,
+    .img_logo {
         text-align: center;
-        background: #9DDE9C url( ../../images/banner_bg1.jpg) repeat fixed top;
+    }
 
-        @import "compass/css3/inline-block";
-        .my-name {
-            position: absolute;
-            left: 20%;
-            bottom: 0;
-            padding: 5%;
-            width: 50%;
-            background-color: rgba(255, 251, 251, 0.5);
-            
-            > .main-name{
-                @include inline-block;
-                padding-bottom: 10px;
-                font-size: $fs-mainName;
-            }
-                
-            > .doing {
-                @include inline-block;
-                margin-top: .5rem;
-                font-weight: bold;
-                color: #BD1A1A;
-            }
-        }
-
+    .top { 
+        height: $ht_top_log;
+        min-height: 40px;
+        background-color: $main_color;
     }
     
-    .content {
-        background-color: $content_bg;
-        text-align: center;
-
-        .my-info {
-            margin: 0;
-            background-color: transparent;
+    .front_card {
+        text-align: left;
+        width: 100%;
+        height: 50%;
+        min-height: 221px;
+        
+        .left_info,
+        .right_code {
+            padding: 2% 3%;
+            height: $ht_content; 
             
-            .shop-name-link {
-                color: currentColor;
+            @media screen and(max-width: 330px) {
+                padding: 2% 1%;
+            }
+        }
+        
+        .front_info {
+            width: 100%;
+
+            .left_info {
+                width: 60%;
+
+                .main-name {
+                    line-height: 39px;
+                    font-size: $fs-mainName;
+                    font-weight: bold;
+                }
+                
+                .doing {
+                    font-size: 14px;
+                    line-height: 1.5;
+
+                    .hidden_doing {
+                        @media screen and(max-width: 350px) {
+                            display: none;
+                        }
+                    }
+
+                }
+            
+                .pingin {
+                    @extend .doing;
+                    font-weight: bold;
+                }
+
+                .user_info.weui_cells {
+                    margin-top: 2%;
+                    background-color: $content_bg;
+                    font-size: 16px;
+                    
+                    &:before, &:after {
+                        display: none;
+                    }
+
+                    @media screen and(max-width: 380px) {
+                        font-size: 14px;
+                    }
+
+                    .weui_cell {
+                        padding: .5rem 0 0 0;    
+
+                        &:before, &:after {
+                            @extend .user_info.weui_cells:before;
+                        }
+
+                        [class*="icon-"]:before {
+                            margin-right: 1.5px;
+                        }   
+                    }
+                }
             }
 
-            [class*="icon-"] {
-                margin: 0 2rem;
-            }   
+            .right_code .logo {
+                    margin: 5px 0;
+                    width: 39%;
+                    max-width: 164px;
+            }
+
+            .right_code .my-code {
+                    margin: .5rem 0;
+                    width: 30%;
+                    max-width: 114px;
+            }
+        }
+    }
+
+    .back_card {
+        height: 50%;
+        font-size: 14px;
+        
+        .top {
+            padding: 2px;    
+            line-height: 1.3;
         }
 
-        .info-code{
-            padding: 1rem .5rem 2rem .5rem;
-            background-color: #feffb1;
+        .back_info{
+            height: $ht_content;
 
-            >.code-explain {
-                font-size: 19px;
-                font-weight: bold;
-                line-height: 1.3;
-                }    
+            .img_logo, 
+            .center_log, 
+            .big_logo {
+                vertical-align: middle;    
+            }
 
-            >.my-code {
-                margin: 1rem;
-                width: 7rem;
-                height: 7rem;
-                background-color: #C37D7D;
+            .img_logo {
+                width: 100%;
+                height: 85%;
+
+                .center_log {
+                    height: 100%;
+                    width: 0;
+                 }
+
+                .big_logo {
+                    width: 90%;
+                    max-width: 455px;
+                }
+            }
+            
+            .contact_info {
+                padding: 0 1%;
+                height: 15%;
             }
         }
     }
@@ -100,32 +178,27 @@ $content_bg: #FFFED0;
     right: 0;
     bottom: 0;
     z-index: 99;
+    overflow: hidden;
+    text-align: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(86, 88, 85, 0.61);
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .arrow {
+        width: 15%;
+        margin-left: 68%;
+        @include transform( rotateZ(30deg));
+    }
 
     .hidden-info {
         position: relative;
-        top: 30%;
-        font-size: 40px;
-        color: #fff;
-
-        .hidden {
-            display: block;
-            position: absolute;
-            right: 18px;
-            top: -150px;
-            transform: rotate(-20deg);
-            -o-transform: rotate(-20deg);
-            -ms-transform: rotate(-20deg);
-            -moz-transform: rotate(-20deg);
-            -webkit-transform: rotate(-20deg);
-            font-size: 60px;
-        }
+        font-size: 26px;
+        color: #b21f24;
     }
 }
 
-
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
 .footer-share {
     position: fixed;
     left: 0;
@@ -134,8 +207,8 @@ $content_bg: #FFFED0;
     font-size: 0;
 
     .share-item {
-        display: inline-block;
-        box-sizing: border-box;
+        @include inline-block;
+        @include box-sizing(border-box);
         width: 50%;
         text-align: center;
         background-color: $main-color-rgba;

@@ -17,45 +17,68 @@
     <link rel="stylesheet" href="./src/fonts3/style.css">
     <link rel="stylesheet" href="./src/css/id-card.css">
     <!-- end : css -->
+    <!-- start : js -->
+     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <!-- end : js-->
 </head>
 <body>
-    <div class="my-card">
-        <div class="top-logo">
-            <p class="logo"> 果果庄园 </p>
+    <div class="my_card">
+        <div class="front_card clearfix">
+            <div class="top"></div>
+            <div class="front_info">
+                <div class="left_info float_left">
+                    <p class="my_name"> 
+                        <span class="main-name">王小花</span> <br/>
+                        <span class="pingin">Wang Xiaohua </span><br/>
+                    </p>
+                    <p class="doing"> 签约代理商 <span class="hidden_doing">| Appointed Agent</span></p> 
+                    <ul class="user_info weui_cells">
+                        <li class="weui_cell"><span class="icon-phone">手机: </span><span class="phone"> 1822932123</span></li>
+                        <li class="weui_cell"><span class="icon-shop">品种: </span><span class="scope">苹果</span></li>
+                        <li class="weui_cell"><span class="icon-location">地址: </span><span class="address"> 陕西渭南合阳甘井镇</span></li>
+                    </ul>
+                </div>
+
+                <div class="right_code">
+                    <img  src="images/logo.jpg" class="logo" >
+                    <p class="code-explain"> 手机扫一扫关注 ta 的果园</p>
+                    <img src="images/code.jpg" class="my-code" />
+                </div>
+            </div>
         </div>
-        <div class="banner">
-            <p class="my-name"> 
-                <span class="main-name">王小花</span> <br/>
-                <i>Wang Xiaohua </i><br/>
-                <span class="doing"> 签约代理商</span> 
-            </p>
-        </div>
-        <div class="content">
-            <ul class="my-info weui_cells">
-                <li class="weui_cell"><span class="icon-home3"></span><a href="" class="shop-name-link"> 我的果园 </a> </li>
-                <li class="my-phone weui_cell"><span class="icon-phone"></span>182 293 212 3</li>
-                <li class="shop-address weui_cell"><span class="icon-location"></span>陕西，西安，*** </li>
-                <li class="shop-scope weui_cell"><span class="icon-shop"></span>苹果，橘子，香蕉 </li>
-            </ul>
-            <div class="info-code">
-                <p class="code-explain"> 手机扫一扫二维码即可关注 ta 的果园，快来扫吧～</p>
-                <img src="images/code.jpg" class="my-code" />
+
+        <div class="back_card">
+            <div class="top">
+                <p class="float_left"> 编号：<span class="number">20152922833</span></p>
+                <p class="float_right clearfix">
+                    互联网农产品交易服务商 <br/>
+                    加盟热线：400-618-3780
+                </p>
+            </div>
+            <div class="back_info">
+                <div class="img_logo">
+                    <i class="center_log"></i>
+                    <img src="images/logo.jpg" class="big_logo">
+                </div>
+                <p class="contact_info">
+                    <span class="back_address"> 甘井镇代办点</span>
+                    |负者人: <span class="back_name"> 王小花 </span>
+                    |手机: <span class="back_phone"> 1822932123</span>
+                </p>
             </div>
         </div>
     </div>
-
-    <div class="share-hidden">
-        <p class="hidden-info">
-            <span class="icon-arrow-up-right2 hidden"></span>
-            点击这里就可以分享了哦～
-        </p>
-        
-    </div>
-
     <ul class="footer-share">
         <li class="share-item"><a href="#" class="link"> 进入店铺 </a></li>
-        <li class="share-item" style="display:none;"><a href="#" class="link"> 二维码 </a></li>
-        <li class="share-item"><a href="#" class="link" > 分享给朋友 </a></li>
-    </ul>
+        <li class="share-item"><a href="#" class="link btn_share"> 分享给朋友 </a></li>
+    </ul>        
+    <div class="share-hidden" style="display:none;">
+        <img src="images/arrow_2.png" class="arrow">
+        <p class="hidden-info">
+            点击这里就可以分享了哦～
+        </p>
+    </div>
+    
+    <script type="text/javascript" src="./src/js/id-card.js"></script>
 
 </body>
