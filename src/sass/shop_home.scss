@@ -1,0 +1,286 @@
+
+/*  nav  */
+$navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);
+$nav-bg: rgba(136, 129, 129, 0.8);
+$nav-bg-hover: #e3f3dd;
+$nav-bg-active: #0e90d2;
+
+/*  content  */
+$shop_name_width: 12rem;
+$shop_name_height: 11rem;
+$products_name_height: 5rem;
+$_class_title_fs: 14px;
+$product_image_height: auto;
+$product_name_fs: 14px;
+$product_name_height: $product_name_fs * 3; 
+$product_item_height: 220px;
+
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+
+html {
+    font-size: 14px;
+}
+.navbar,
+.nav-list {
+    width: 100%;
+}
+.nav-link {
+    @include inline-block;
+    color: #fff;
+    padding: .5rem 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: #edd;
+    }
+    
+    &:active {
+        color:#353131;
+    }
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+    background-color: $nav-bg; 
+
+    .nav-list {
+        font-size: 0;
+    
+        > [class*= "nav-item"] {
+            @include inline-block;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
+/*   nav-top    */
+.nav-top {
+    top: 0;
+    left: 0;
+
+    .nav-link {
+        padding: .5rem;
+    }
+}
+
+/*   nav-footer   */
+.nav-footer {
+    bottom: 0;
+    left: 0;
+
+    .nav-list > .nav-item {
+        @include box-sizing(border-box );
+        width: 50%;
+
+        .nav-link {
+            width: 100%; 
+        }
+        
+        &:not(:first-child) {
+            border: 1px none #fff;
+            border-style: none none none solid;
+        }
+    }
+
+    .nav-list .menu {
+        position: relative;
+
+
+        .menu_item {
+            position: absolute;
+            top: -78px;
+            width: 95%;
+            background: rgba(136, 129, 129, 0.8);
+            color: #fff;
+
+            .class_link {
+                @extend .nav-link;
+                padding: 0;
+
+            }
+        }
+    }
+}
+
+.msg-dot {
+    position: relative;
+    
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background-color: #f74c31;
+        top: -5px;
+        right: -5px;    
+    }
+}
+
+/*  content  */
+.block-content{
+    margin: 0 auto;
+    min-height: 35rem;
+    text-align: center;
+}
+
+/* banner & name & shop-info */
+@import "compass/css3/border-radius";
+.shop-banner {
+    position: relative;
+    max-width: 100%;
+    height: 20rem;
+    background: #efe;  /* test */
+    font-size: 10px;
+    line-height: 1.5;
+
+    > .banner_bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    > .shop_name {
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        margin-left: -$shop_name_width/2;
+        width: $shop_name_width;
+        height: $shop_name_height;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        > .avater {
+            width: 4rem;
+            height: 4rem;
+            margin: 1em 0 .5rem 0;
+            background: rgb(255,235,59);  /* test */
+            border: 2px solid #fff;
+            @include border-radius(999px);
+        }
+
+        >.name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+    }
+}
+
+.toggle_info {
+    min-height: 3rem;
+    width: 100%;
+    vertical-align: middle;
+
+    .toggle_icon {
+        padding: .5rem;    
+        font-size: 20px;
+    }
+    .info_hidden {
+        padding: 12px 26px;
+        text-align: left;
+    }
+}
+/*
+*
+*  Products
+*
+*
+**/
+
+/*  Products Name   */
+.products_name {
+    width: 100%;
+    height: $products_name_height;
+    line-height: $products_name_height;
+    background-color: rgb(239, 129, 125);
+    font-size: 18px;
+}
+
+/* products list */
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+.products {
+    margin: 3rem auto;
+
+    > h3.class-title {
+        margin: 1rem auto;
+        color: #2840D0;
+        font-size: $_class_title_fs;
+        
+        &:before {
+            display: block;
+            content: " ";
+            margin: 1rem 0;
+            width: 100%;
+            border: 1px none #eee;
+            border-style: none none solid none;
+        }
+    }
+
+    > .products-gallery {  /*  ul的 border-bottom 过长的问题  */
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #eee;
+        font-size: 0;
+
+        > .products-item {
+            @include inline-block;
+            @include box-sizing( border-box );
+            padding: .5rem;
+            width: 49%;
+            min-height: $product_item_height;
+            border: 1px none #eee;
+            font-size: 16px;
+
+            &:nth-child(odd) {
+                border-style: solid none none none ;
+            }
+
+            &:nth-child(even) {
+                border-style: solid none none solid;
+            }
+
+            .product_item_link{
+                display: block;
+                
+                .products-image {
+                    width: 100%;
+                    height: $product_image_height;
+                    background-color: #def;
+                }
+
+                .products_tag{
+                    text-align: left;
+                    
+                    .product-name {
+                        overflow: hidden;
+                        font-size: $product_name_fs;
+                        height: $product_name_height;
+                    }
+
+                    .price {
+                        font-size:.5rem;
+                        
+                        .current_price {
+                            color: red;
+                            font-size: 1.2rem;
+                        }
+
+                        .before_price {
+                            color: #716C6C;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+   
+

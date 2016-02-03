@@ -33,7 +33,7 @@ html, body {
     height: 100%;
 }
 body {
-    line-height:1;
+    line-height:1.5;
 }
 
 :focus {

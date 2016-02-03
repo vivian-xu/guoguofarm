@@ -29,15 +29,8 @@
     content: "\e903";
 }
 
-.icon-star-full:before {
-    content: "\e904";   /* \e90b */
-}
-
 .icon-heart:before {
     content: "\e905";  /* \e90a */
-}
-.icon-happy2:before {
-    content: "\e906";   /* \e05b */
 }
 
 .icon-wink2:before {

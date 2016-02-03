@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*  nav  */
+/*  content  */
+/* line 21, ../sass/shop_home.scss */
+html {
+  font-size: 14px; }
+
+/* line 24, ../sass/shop_home.scss */
+.navbar,
+.nav-list {
+  width: 100%; }
+
+/* line 28, ../sass/shop_home.scss */
+.nav-link, .nav-footer .nav-list .menu .menu_item .class_link {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: #fff;
+  padding: .5rem 0; }
+  /* line 33, ../sass/shop_home.scss */
+  .nav-link:focus, .nav-footer .nav-list .menu .menu_item .class_link:focus {
+    outline: none; }
+  /* line 37, ../sass/shop_home.scss */
+  .nav-link:hover, .nav-footer .nav-list .menu .menu_item .class_link:hover {
+    color: #edd; }
+  /* line 41, ../sass/shop_home.scss */
+  .nav-link:active, .nav-footer .nav-list .menu .menu_item .class_link:active {
+    color: #353131; }
+
+/* line 45, ../sass/shop_home.scss */
+.navbar {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(136, 129, 129, 0.8); }
+  /* line 50, ../sass/shop_home.scss */
+  .navbar .nav-list {
+    font-size: 0; }
+    /* line 53, ../sass/shop_home.scss */
+    .navbar .nav-list > [class*="nav-item"] {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      font-size: 16px;
+      text-align: center; }
+
+/*   nav-top    */
+/* line 62, ../sass/shop_home.scss */
+.nav-top {
+  top: 0;
+  left: 0; }
+  /* line 66, ../sass/shop_home.scss */
+  .nav-top .nav-link, .nav-top .nav-footer .nav-list .menu .menu_item .class_link, .nav-footer .nav-list .menu .menu_item .nav-top .class_link {
+    padding: .5rem; }
+
+/*   nav-footer   */
+/* line 72, ../sass/shop_home.scss */
+.nav-footer {
+  bottom: 0;
+  left: 0; }
+  /* line 76, ../sass/shop_home.scss */
+  .nav-footer .nav-list > .nav-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%; }
+    /* line 80, ../sass/shop_home.scss */
+    .nav-footer .nav-list > .nav-item .nav-link, .nav-footer .nav-list > .nav-item .menu .menu_item .class_link {
+      width: 100%; }
+    /* line 84, ../sass/shop_home.scss */
+    .nav-footer .nav-list > .nav-item:not(:first-child) {
+      border: 1px none #fff;
+      border-style: none none none solid; }
+  /* line 90, ../sass/shop_home.scss */
+  .nav-footer .nav-list .menu {
+    position: relative; }
+    /* line 94, ../sass/shop_home.scss */
+    .nav-footer .nav-list .menu .menu_item {
+      position: absolute;
+      top: -78px;
+      width: 95%;
+      background: rgba(136, 129, 129, 0.8);
+      color: #fff; }
+      /* line 101, ../sass/shop_home.scss */
+      .nav-footer .nav-list .menu .menu_item .class_link {
+        padding: 0; }
+
+/* line 110, ../sass/shop_home.scss */
+.msg-dot {
+  position: relative; }
+  /* line 113, ../sass/shop_home.scss */
+  .msg-dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f74c31;
+    top: -5px;
+    right: -5px; }
+
+/*  content  */
+/* line 127, ../sass/shop_home.scss */
+.block-content {
+  margin: 0 auto;
+  min-height: 35rem;
+  text-align: center; }
+
+/* banner & name & shop-info */
+/* line 135, ../sass/shop_home.scss */
+.shop-banner {
+  position: relative;
+  max-width: 100%;
+  height: 20rem;
+  background: #efe;
+  /* test */
+  font-size: 10px;
+  line-height: 1.5; }
+  /* line 143, ../sass/shop_home.scss */
+  .shop-banner > .banner_bg {
+    width: 100%;
+    height: 100%; }
+  /* line 148, ../sass/shop_home.scss */
+  .shop-banner > .shop_name {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6rem;
+    width: 12rem;
+    height: 11rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center; }
+    /* line 158, ../sass/shop_home.scss */
+    .shop-banner > .shop_name > .avater {
+      width: 4rem;
+      height: 4rem;
+      margin: 1em 0 .5rem 0;
+      background: #ffeb3b;
+      /* test */
+      border: 2px solid #fff;
+      -moz-border-radius: 999px;
+      -webkit-border-radius: 999px;
+      border-radius: 999px; }
+    /* line 167, ../sass/shop_home.scss */
+    .shop-banner > .shop_name > .name {
+      font-size: 16px;
+      font-weight: bold; }
+
+/* line 175, ../sass/shop_home.scss */
+.toggle_info {
+  min-height: 3rem;
+  width: 100%;
+  vertical-align: middle; }
+  /* line 180, ../sass/shop_home.scss */
+  .toggle_info .toggle_icon {
+    padding: .5rem;
+    font-size: 20px; }
+  /* line 184, ../sass/shop_home.scss */
+  .toggle_info .info_hidden {
+    padding: 12px 26px;
+    text-align: left; }
+
+/*
+*
+*  Products
+*
+*
+**/
+/*  Products Name   */
+/* line 197, ../sass/shop_home.scss */
+.products_name {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #ef817d;
+  font-size: 18px; }
+
+/* products list */
+/* line 208, ../sass/shop_home.scss */
+.products {
+  margin: 3rem auto; }
+  /* line 211, ../sass/shop_home.scss */
+  .products > h3.class-title {
+    margin: 1rem auto;
+    color: #2840D0;
+    font-size: 14px; }
+    /* line 216, ../sass/shop_home.scss */
+    .products > h3.class-title:before {
+      display: block;
+      content: " ";
+      margin: 1rem 0;
+      width: 100%;
+      border: 1px none #eee;
+      border-style: none none solid none; }
+  /* line 226, ../sass/shop_home.scss */
+  .products > .products-gallery {
+    /*  ul的 border-bottom 过长的问题  */
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0; }
+    /* line 232, ../sass/shop_home.scss */
+    .products > .products-gallery > .products-item {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: .5rem;
+      width: 49%;
+      min-height: 220px;
+      border: 1px none #eee;
+      font-size: 16px; }
+      /* line 241, ../sass/shop_home.scss */
+      .products > .products-gallery > .products-item:nth-child(odd) {
+        border-style: solid none none none; }
+      /* line 245, ../sass/shop_home.scss */
+      .products > .products-gallery > .products-item:nth-child(even) {
+        border-style: solid none none solid; }
+      /* line 249, ../sass/shop_home.scss */
+      .products > .products-gallery > .products-item .product_item_link {
+        display: block; }
+        /* line 252, ../sass/shop_home.scss */
+        .products > .products-gallery > .products-item .product_item_link .products-image {
+          width: 100%;
+          height: auto;
+          background-color: #def; }
+        /* line 258, ../sass/shop_home.scss */
+        .products > .products-gallery > .products-item .product_item_link .products_tag {
+          text-align: left; }
+          /* line 261, ../sass/shop_home.scss */
+          .products > .products-gallery > .products-item .product_item_link .products_tag .product-name {
+            overflow: hidden;
+            font-size: 14px;
+            height: 42px; }
+          /* line 267, ../sass/shop_home.scss */
+          .products > .products-gallery > .products-item .product_item_link .products_tag .price {
+            font-size: .5rem; }
+            /* line 270, ../sass/shop_home.scss */
+            .products > .products-gallery > .products-item .product_item_link .products_tag .price .current_price {
+              color: red;
+              font-size: 1.2rem; }
+            /* line 275, ../sass/shop_home.scss */
+            .products > .products-gallery > .products-item .product_item_link .products_tag .price .before_price {
+              color: #716C6C;
+              text-decoration: line-through; }
