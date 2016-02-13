@@ -144,10 +144,16 @@ html {
       vertical-align: middle;
       height: 66px;
       width: 1px; }
-    /* line 176, ../sass/product.scss */
+    /* line 177, ../sass/product.scss */
     .come_shop > .come_fonts .shop_link {
       color: #000; }
-  /* line 182, ../sass/product.scss */
+    /* line 181, ../sass/product.scss */
+    .come_shop > .come_fonts .shop_link:hover {
+      color: #fff; }
+    /* line 185, ../sass/product.scss */
+    .come_shop > .come_fonts .shop_link:active {
+      color: #fff; }
+  /* line 191, ../sass/product.scss */
   .come_shop > .shop_avater {
     margin: 3px;
     width: 4rem;
@@ -159,21 +165,21 @@ html {
     -webkit-border-radius: 999px;
     border-radius: 999px;
     vertical-align: middle; }
-  /* line 192, ../sass/product.scss */
+  /* line 201, ../sass/product.scss */
   .come_shop > .shop_name {
     font-size: 16px;
     display: inline-block;
     vertical-align: middle; }
-    /* line 197, ../sass/product.scss */
+    /* line 206, ../sass/product.scss */
     .come_shop > .shop_name > .shop_address {
       font-size: 10px; }
 
-/* line 203, ../sass/product.scss */
+/* line 212, ../sass/product.scss */
 .detail_title {
   margin: 10px;
   text-align: center;
   color: #f00; }
-  /* line 208, ../sass/product.scss */
+  /* line 217, ../sass/product.scss */
   .detail_title:after {
     display: block;
     content: "";
@@ -182,7 +188,18 @@ html {
     border-style: none none solid none;
     margin: auto; }
 
-/* line 219, ../sass/product.scss */
+/* line 227, ../sass/product.scss */
 .product_detail {
-  margin: 10px 5%;
+  overflow: hidden;
+  margin: 50px 3%;
   min-height: 200px; }
+  /* line 232, ../sass/product.scss */
+  .product_detail:after {
+    display: block;
+    content: "";
+    width: 100%;
+    border: 1px none #000;
+    border-style: none none solid none; }
+  /* line 240, ../sass/product.scss */
+  .product_detail > img {
+    max-width: 100%; }
