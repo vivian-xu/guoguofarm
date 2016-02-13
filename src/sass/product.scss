@@ -173,8 +173,17 @@ html {
             height: $come_shop_height;
             width: 1px;
         }
+
         .shop_link {
             color: #000;
+        }
+
+        .shop_link:hover {
+            color: #fff;
+        }
+
+        .shop_link:active {
+            color: #fff;
         }  
     }
 
@@ -212,12 +221,24 @@ html {
         border: 1px none #f00;
         border-style: none none solid none;
         margin: auto;
-
     }
 }
 
 .product_detail {
-    margin: 10px 5%;
+    overflow: hidden;
+    margin: 50px 3%;
     min-height: 200px;
+
+    &:after{
+        display: block;
+        content: "";
+        width: 100%;
+        border: 1px none #000;
+        border-style: none none solid none;
+    }
+
+    > img {
+        max-width: 100%;
+    }
 
 }
