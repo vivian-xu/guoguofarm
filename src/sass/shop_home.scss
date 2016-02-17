@@ -180,6 +180,10 @@ html {
     .toggle_icon {
         padding: .5rem;    
         font-size: 20px;
+
+        &:hover {
+            color: red;
+        }
     }
     .info_hidden {
         padding: 12px 26px;
