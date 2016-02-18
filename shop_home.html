@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="./src/css/nav.css">
     <link rel="stylesheet" href="./src/css/shop_home.css">
 	<!-- end: CSS -->
-    <!-- start : js -->
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
-    <!-- end : js-->
+    <!-- start: javascript -->
+    <script type="text/javascript" src="./src/js/jquery.min.js"></script>
+    <!-- end: javascript -->
 </head>
 <body>
     <!-- This is top-navbar  -->
@@ -53,7 +53,7 @@
                         
                     -->
 
-	<div id="content" class="block-content">
+	<section id="shop_home" class="block-content">
 		<div class="shop-banner">
             <img class="banner_bg" src="images/banner_b1.jpg"/>
             <div class="shop_name">
@@ -67,11 +67,10 @@
             </div>
 		</div>
         <div class="toggle_info">
-            <a class="toggle_icon"><span class="icon-chevron-thin-down"></span></a>
+            <p class="toggle_icon"><span class="icon-chevron-thin-down"></span></p>
             <p class="info_hidden" style="display: none;">1,2,3,5 我有一头小毛驴，我从来也不骑，有一天我心血来潮骑它去赶集，我手里拿着小皮鞭，心里正得意，一不小心，哗啦啦啦啦摔了一身泥。</p>
         </div>
-        <div class="products_name"><h1 class="">我的果子</h1>
-        </div>
+        <h1 class="products_name">我的果子</h1>
         <div class="products">
             <h3 class="class-title">苹果</h3>
             <ul class="products-gallery">
@@ -299,26 +298,24 @@
                 </li>
             </ul>
         </div>
-	</div>
-    
+	</section>
 
     <!-- This is footer-navbar  -->
 	<nav id="footer-nav" class="navbar nav-footer">
 		<ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#"><span class="icon-heart msg-dot"></span>
-            关注
-            </a></li>
-            <li class="nav-item menu"><a class="nav-link" href="#"><span class="icon-menu"></span>
-            商品分类
-            </a>
-                <ul class="menu_item" style="display: none;">
-                    <li class="item1"><a href="" class="class_link">苹果</a></li>
-                    <li class="item2"><a href="" class="class_link">香蕉</a></li>
-                    <li class="item3"><a href="" class="class_link">西瓜</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="icon-heart msg-dot"></span>关注</a>
+            </li>
+            <li class="nav-item item_downMenu up">
+                <a class="nav-link" href="#"><span class="icon-menu"></span>商品分类 </a>
+                <ul class="menu_item" style="display: block;">
+                    <li class="item1"><a href="#" class="class_link">苹果</a></li>
+                    <li class="item2"><a href="#" class="class_link">香蕉</a></li>
+                    <li class="item3"><a href="#" class="class_link">西瓜</a></li>
                 </ul>
             </li>
         </ul>
 	</nav>
 </body>
-<script src="./src/js/shop_home.js"></script>
+<script type="text/javascript" src="src/js/shop_home.js"></script>
 </html>

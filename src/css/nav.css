@@ -1,4 +1,4 @@
-/* line 8, ../sass/nav.scss */
+/* line 9, ../sass/nav.scss */
 html {
   font-size: 16px; }
 
@@ -7,34 +7,41 @@ html {
 .nav-list {
   width: 100%; }
 
-/* line 15, ../sass/nav.scss */
+/* line 14, ../sass/nav.scss */
+.class_link,
 .nav-link {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
-  padding: .5rem 0; }
-  /* line 20, ../sass/nav.scss */
+  padding: .3rem .5rem; }
+  /* line 21, ../sass/nav.scss */
+  .class_link:focus,
   .nav-link:focus {
     outline: none; }
-  /* line 24, ../sass/nav.scss */
+  /* line 23, ../sass/nav.scss */
+  .class_link:hover,
   .nav-link:hover {
     color: #edd; }
-  /* line 28, ../sass/nav.scss */
+  /* line 25, ../sass/nav.scss */
+  .class_link:active,
   .nav-link:active {
     color: #353131; }
 
-/* line 32, ../sass/nav.scss */
+/* line 28, ../sass/nav.scss */
 .navbar {
   position: fixed;
   z-index: 10;
   background-color: rgba(136, 129, 129, 0.8); }
-  /* line 37, ../sass/nav.scss */
+  /* line 33, ../sass/nav.scss */
   .navbar .nav-list {
     font-size: 0; }
-    /* line 40, ../sass/nav.scss */
+    /* line 36, ../sass/nav.scss */
     .navbar .nav-list > [class*="nav-item"] {
       display: inline-block;
       vertical-align: middle;
@@ -45,43 +52,73 @@ html {
       text-align: center; }
 
 /*   nav-top    */
-/* line 49, ../sass/nav.scss */
+/* line 45, ../sass/nav.scss */
 .nav-top {
   top: 0;
   left: 0; }
-  /* line 53, ../sass/nav.scss */
-  .nav-top .nav-link {
-    padding: .5rem; }
 
 /*   nav-footer   */
-/* line 59, ../sass/nav.scss */
+/* line 51, ../sass/nav.scss */
 .nav-footer {
   bottom: 0;
   left: 0; }
-  /* line 63, ../sass/nav.scss */
+  /* line 55, ../sass/nav.scss */
   .nav-footer .nav-list > .nav-item {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%; }
-    /* line 67, ../sass/nav.scss */
+    /* line 59, ../sass/nav.scss */
     .nav-footer .nav-list > .nav-item .nav-link {
       width: 100%; }
-    /* line 71, ../sass/nav.scss */
+    /* line 61, ../sass/nav.scss */
     .nav-footer .nav-list > .nav-item:not(:first-child) {
       border: 1px none #fff;
       border-style: none none none solid; }
 
-/* line 78, ../sass/nav.scss */
+/*  item_downMenu  */
+/* line 69, ../sass/nav.scss */
+.item_downMenu {
+  position: relative; }
+  /* line 72, ../sass/nav.scss */
+  .item_downMenu .menu_item {
+    position: absolute;
+    width: 100%;
+    background: rgba(136, 129, 129, 0.8); }
+    /* line 77, ../sass/nav.scss */
+    .item_downMenu .menu_item li,
+    .item_downMenu .menu_item li .class_link {
+      width: 100%; }
+    /* line 80, ../sass/nav.scss */
+    .item_downMenu .menu_item li {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px none rgba(245, 245, 245, 0.8); }
+
+/* line 87, ../sass/nav.scss */
+.item_downMenu.up .menu_item {
+  top: -7rem; }
+  /* line 90, ../sass/nav.scss */
+  .item_downMenu.up .menu_item li {
+    border-style: solid solid none solid; }
+
+/* line 93, ../sass/nav.scss */
+.item_downMenu.down .menu_item li {
+  border-style: none solid solid solid; }
+
+/* line 95, ../sass/nav.scss */
 .msg-dot {
   position: relative; }
-  /* line 81, ../sass/nav.scss */
+  /* line 98, ../sass/nav.scss */
   .msg-dot:after {
     display: block;
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: #f74c31;
     top: -5px;

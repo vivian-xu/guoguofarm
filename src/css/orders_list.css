@@ -1,167 +1,160 @@
-/* line 4, ../sass/orders_list.scss */
+@charset "UTF-8";
+/**** 与 order_details 共用开始 ****/
+/* nav */
+/*              问题 ？？？？？？？？？？？？？？？*/
+/* line 11, ../sass/orders_list.scss */
+.nav_center {
+  margin-left: -16px; }
+
+/* product_item  */
+/* line 14, ../sass/orders_list.scss */
+.product_item {
+  padding: 10px 0;
+  border: 1px none #eee;
+  border-style: none none solid none; }
+  /* line 19, ../sass/orders_list.scss */
+  .product_item .product_avater {
+    width: 35%;
+    margin-right: 5%; }
+  /* line 24, ../sass/orders_list.scss */
+  .product_item .info_right {
+    margin-left: 40%;
+    overflow: hidden; }
+    /* line 28, ../sass/orders_list.scss */
+    .product_item .info_right .product_name {
+      font-size: 14px;
+      font-weight: bold; }
+
+/* -- sum -- */
+/* line 36, ../sass/orders_list.scss */
+.sum {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px none #eee;
+  border-style: none none solid none; }
+  /* line 42, ../sass/orders_list.scss */
+  .sum .sum_price {
+    font-size: 16px;
+    color: red; }
+
+/* line 48, ../sass/orders_list.scss */
+.order_shop {
+  margin-top: -1px;
+  padding: 5px; }
+  /* line 53, ../sass/orders_list.scss */
+  .order_shop .inshop_icon, .order_shop .order_shop {
+    vertical-align: middle; }
+
+/***  共用完  ****/
+/* line 57, ../sass/orders_list.scss */
 body {
-  min-width: 277px; }
+  min-width: 300px; }
 
 /*
- 
  ** nav **
- 
  */
-/* line 12, ../sass/orders_list.scss */
+/* line 61, ../sass/orders_list.scss */
 .order_nav.navbar {
   background-color: rgba(230, 162, 162, 0.8);
   min-width: 190px; }
 
-/* line 17, ../sass/orders_list.scss */
+/* line 66, ../sass/orders_list.scss */
 .order_nav .nav-list.center {
   text-align: center; }
 
-/* line 21, ../sass/orders_list.scss */
+/* line 68, ../sass/orders_list.scss */
 .order_nav .nav-link,
 .order_nav .class_link {
   color: #000; }
-  /* line 25, ../sass/orders_list.scss */
+  /* line 72, ../sass/orders_list.scss */
   .order_nav .nav-link:hover,
   .order_nav .class_link:hover {
     color: #eee; }
-  /* line 28, ../sass/orders_list.scss */
+  /* line 74, ../sass/orders_list.scss */
   .order_nav .nav-link:active,
   .order_nav .class_link:active {
     color: #F30939; }
-  /* line 32, ../sass/orders_list.scss */
+  /* line 76, ../sass/orders_list.scss */
   .order_nav .nav-link [class*="icon-"],
   .order_nav .class_link [class*="icon-"] {
     font-weight: bold; }
-  /* line 36, ../sass/orders_list.scss */
+  /* line 78, ../sass/orders_list.scss */
   .order_nav .nav-link .down_icon,
   .order_nav .class_link .down_icon {
     margin-left: 5px; }
 
-/* line 41, ../sass/orders_list.scss */
-.nav_down {
-  position: relative; }
-  /* line 44, ../sass/orders_list.scss */
-  .nav_down .menu_item {
-    position: absolute;
-    left: -5px;
-    width: 110%;
-    background: rgba(235, 180, 180, 0.8); }
-    /* line 50, ../sass/orders_list.scss */
-    .nav_down .menu_item li,
-    .nav_down .menu_item li .class_link {
-      width: 100%; }
-    /* line 53, ../sass/orders_list.scss */
-    .nav_down .menu_item li {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      border: 1px none rgba(220, 155, 155, 0.8);
-      border-style: none solid solid solid; }
-    /* line 59, ../sass/orders_list.scss */
-    .nav_down .menu_item .class_link {
-      display: inline-block;
-      padding: 5px 0; }
+/* line 81, ../sass/orders_list.scss */
+.item_downMenu .menu_item {
+  left: -16px;
+  width: 110%;
+  background: rgba(235, 180, 180, 0.8); }
+  /* line 86, ../sass/orders_list.scss */
+  .item_downMenu .menu_item li {
+    border: 1px none rgba(220, 155, 155, 0.8); }
 
 /*
  
  ** content  **
 
  */
-/* line 71, ../sass/orders_list.scss */
+/* line 94, ../sass/orders_list.scss */
 .content {
-  margin-top: 3rem;
-  /*  
-      --- order_list ---
-   */ }
-  /* line 78, ../sass/orders_list.scss */
-  .content .order_list {
-    overflow: hidden;
+  margin: 3rem 0; }
+
+/*  
+    --- order_list ---
+ */
+/* line 99, ../sass/orders_list.scss */
+.order_list {
+  overflow: hidden;
+  border: 1px none #EC9A72;
+  border-style: solid none; }
+  /* line 104, ../sass/orders_list.scss */
+  .order_list .order_shop .shop_name {
+    font-weight: bold; }
+  /* line 106, ../sass/orders_list.scss */
+  .order_list .order_time {
+    padding: 5px;
     border: 1px none #EC9A72;
-    border-style: solid none;
-    /*  
-        --- products ---
-     */ }
-    /* line 83, ../sass/orders_list.scss */
-    .content .order_list .order_time,
-    .content .order_list .order_shop {
-      padding: 5px; }
-    /* line 86, ../sass/orders_list.scss */
-    .content .order_list .order_shop {
-      vertical-align: middle; }
-      /* line 89, ../sass/orders_list.scss */
-      .content .order_list .order_shop .inshop_icon {
-        vertical-align: middle; }
-      /* line 93, ../sass/orders_list.scss */
-      .content .order_list .order_shop .shop_name {
-        font-weight: bold; }
-    /* line 98, ../sass/orders_list.scss */
-    .content .order_list .order_time {
-      border: 1px none #EC9A72;
-      border-style: none none solid none;
-      font-size: 10px; }
-    /* line 104, ../sass/orders_list.scss */
-    .content .order_list .order_shop {
-      margin-top: -1px;
-      background-color: rgba(230, 162, 162, 0.8); }
-      /* line 108, ../sass/orders_list.scss */
-      .content .order_list .order_shop [class*="state_"] {
-        font-weight: bold; }
-      /* line 112, ../sass/orders_list.scss */
-      .content .order_list .order_shop .state_done {
-        color: #13B113; }
-      /* line 116, ../sass/orders_list.scss */
-      .content .order_list .order_shop .state_doing {
-        color: #F9F701; }
-    /* line 126, ../sass/orders_list.scss */
-    .content .order_list .order_products {
-      margin: 0 5px;
-      font-size: 10px;
-      /* product_item  */
-      /* -- sum -- */
-      /*
-          -- action --
-       */ }
-      /* line 131, ../sass/orders_list.scss */
-      .content .order_list .order_products .product_item {
-        padding: 10px 0;
-        border: 1px none #eee;
-        border-style: none none solid none; }
-        /* line 136, ../sass/orders_list.scss */
-        .content .order_list .order_products .product_item .product_avater {
-          width: 35%;
-          margin-right: 5%; }
-        /* line 141, ../sass/orders_list.scss */
-        .content .order_list .order_products .product_item .info_right {
-          margin-left: 40%;
-          overflow: hidden; }
-          /* line 145, ../sass/orders_list.scss */
-          .content .order_list .order_products .product_item .info_right .product_name {
-            font-size: 14px;
-            font-weight: bold; }
-      /* line 153, ../sass/orders_list.scss */
-      .content .order_list .order_products .sum {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 5px;
-        border: 1px none #eee;
-        border-style: none none solid none; }
-        /* line 159, ../sass/orders_list.scss */
-        .content .order_list .order_products .sum .sum_price {
-          font-size: 16px;
-          color: red; }
-      /* line 169, ../sass/orders_list.scss */
-      .content .order_list .order_products .shop_action {
-        margin: 5px; }
-        /* line 172, ../sass/orders_list.scss */
-        .content .order_list .order_products .shop_action .shop_contact,
-        .content .order_list .order_products .shop_action .action_btn {
-          display: inline-block;
-          vertical-align: middle;
-          *vertical-align: auto;
-          *zoom: 1;
-          *display: inline; }
-        /* line 177, ../sass/orders_list.scss */
-        .content .order_list .order_products .shop_action .action_btn .contact_action {
-          padding: .25em .75em;
-          margin: 0; }
+    border-style: none none solid none;
+    font-size: 10px; }
+  /* line 113, ../sass/orders_list.scss */
+  .order_list .order_shop {
+    background-color: rgba(230, 162, 162, 0.8); }
+    /* line 116, ../sass/orders_list.scss */
+    .order_list .order_shop [class*="state_"] {
+      font-weight: bold; }
+    /* line 118, ../sass/orders_list.scss */
+    .order_list .order_shop .state_done {
+      color: #13B113; }
+    /* line 120, ../sass/orders_list.scss */
+    .order_list .order_shop .state_doing {
+      color: #F9F701; }
+
+/*  
+    --- products ---
+ */
+/* line 127, ../sass/orders_list.scss */
+.order_products {
+  margin: 0 5px;
+  font-size: 10px;
+  /*
+      -- action --
+   */ }
+  /* line 134, ../sass/orders_list.scss */
+  .order_products .shop_action {
+    margin: 5px; }
+    /* line 137, ../sass/orders_list.scss */
+    .order_products .shop_action .shop_contact,
+    .order_products .shop_action .action_btn {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline; }
+    /* line 140, ../sass/orders_list.scss */
+    .order_products .shop_action .action_btn {
+      padding: .25em .75em;
+      margin: 0 0 0 .5rem; }

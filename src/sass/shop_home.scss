@@ -1,3 +1,6 @@
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+@import "compass/css3/border-radius";
 
 /*  nav  */
 $navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);
@@ -8,121 +11,19 @@ $nav-bg-active: #0e90d2;
 /*  content  */
 $shop_name_width: 12rem;
 $shop_name_height: 11rem;
-$products_name_height: 5rem;
+$products_name_height: 2.5;
 $_class_title_fs: 14px;
 $product_image_height: auto;
 $product_name_fs: 14px;
 $product_name_height: $product_name_fs * 3; 
 $product_item_height: 220px;
 
-@import "compass/css3/inline-block";
-@import "compass/css3/box-sizing";
 
 html {
     font-size: 14px;
 }
-.navbar,
-.nav-list {
-    width: 100%;
-}
-.nav-link {
-    @include inline-block;
-    color: #fff;
-    padding: .5rem 0;
-
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-        color: #edd;
-    }
-    
-    &:active {
-        color:#353131;
-    }
-}
-.navbar {
-    position: fixed;
-    z-index: 10;
-    background-color: $nav-bg; 
-
-    .nav-list {
-        font-size: 0;
-    
-        > [class*= "nav-item"] {
-            @include inline-block;
-            font-size: 16px;
-            text-align: center;
-        }
-    }
-}
-
-/*   nav-top    */
-.nav-top {
-    top: 0;
-    left: 0;
-
-    .nav-link {
-        padding: .5rem;
-    }
-}
 
 /*   nav-footer   */
-.nav-footer {
-    bottom: 0;
-    left: 0;
-
-    .nav-list > .nav-item {
-        @include box-sizing(border-box );
-        width: 50%;
-
-        .nav-link {
-            width: 100%; 
-        }
-        
-        &:not(:first-child) {
-            border: 1px none #fff;
-            border-style: none none none solid;
-        }
-    }
-
-    .nav-list .menu {
-        position: relative;
-
-
-        .menu_item {
-            position: absolute;
-            top: -78px;
-            width: 95%;
-            background: rgba(136, 129, 129, 0.8);
-            color: #fff;
-
-            .class_link {
-                @extend .nav-link;
-                padding: 0;
-
-            }
-        }
-    }
-}
-
-.msg-dot {
-    position: relative;
-    
-    &:after {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius:5px;
-        background-color: #f74c31;
-        top: -5px;
-        right: -5px;    
-    }
-}
-
 /*  content  */
 .block-content{
     margin: 0 auto;
@@ -131,7 +32,6 @@ html {
 }
 
 /* banner & name & shop-info */
-@import "compass/css3/border-radius";
 .shop-banner {
     position: relative;
     max-width: 100%;
@@ -191,13 +91,11 @@ html {
     }
 }
 /*
-*
-*  Products
-*
-*
-**/
+    --Products--
+*/
 
-/*  Products Name   */
+/*  Name   */
+
 .products_name {
     width: 100%;
     height: $products_name_height;

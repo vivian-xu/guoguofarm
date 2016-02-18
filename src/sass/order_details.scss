@@ -1,0 +1,73 @@
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+
+body { min-width: 277px; }
+
+/*
+ ** nav **
+ */
+.order_nav.navbar {
+    background-color: rgba(230, 162, 162, 0.8);
+    min-width: 190px;
+}
+
+.nav-list.center { text-align: center; }
+
+.order_nav .nav-link,
+.order_nav .class_link {
+    color: #000;
+    
+    &:hover { color: #eee; }
+
+    &:active { color: #F30939; }
+}
+
+.order_nav .nav-name { padding: .3rem .5rem; }
+
+/*
+ ** content  **
+ */
+.order_details {
+    margin-top: 3rem;
+
+    /* -- get_code -- */
+    .get_code {
+        text-align: center;
+        
+        .get_num,
+        .code { margin: .5rem; }
+        .get_num { 
+            color: red; 
+            font-weight:bold;
+        }
+    
+        .code {
+            width: 60%;
+            max-width: 460px;
+        }
+    }
+
+    /* -- order_info -- */
+    .order_info {
+        margin: 5%;
+
+        h3 { 
+            @box-sizing( border-box );
+            border: 1px none #f5dddd;
+            border-style: none none solid none;
+        }
+
+        p {
+            margin: .5rem 0;
+            font-size: 12px ;
+            line-height: 1.5;
+            color: #615B5B;
+        }
+    }
+
+    /* -- order_shop -- */
+    p.order_shop { border: 1px solid #f5dddd; }
+    .shop_contact { width: 100%;}
+}
+
+

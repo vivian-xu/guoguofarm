@@ -1,34 +1,30 @@
-$navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);
-$nav-bg: rgba(136, 129, 129, 0.8);
-$nav-bg-hover: #e3f3dd;
-$nav-bg-active: #0e90d2;
-
 @import "compass/css3/inline-block";
 @import "compass/css3/box-sizing";
-html {
-    font-size: 16px;
-}
+@import "compass/css3/border-radius";
+
+$navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);
+$nav-bg: rgba(136, 129, 129, 0.8);
+$menu_up_top: -7rem;
+
+html { font-size: 16px; }
+
 .navbar,
-.nav-list {
-    width: 100%;
-}
+.nav-list { width: 100%; }
+
+.class_link,
 .nav-link {
     @include inline-block;
+    @include box-sizing( border-box );
     color: #fff;
-    padding: .5rem 0;
+    padding: .3rem .5rem;
 
-    &:focus {
-        outline: none;
-    }
+    &:focus { outline: none; }
 
-    &:hover {
-        color: #edd;
-    }
-    
-    &:active {
-        color:#353131;
-    }
+    &:hover { color: #edd; }
+
+    &:active { color:#353131; }
 }
+
 .navbar {
     position: fixed;
     z-index: 10;
@@ -49,10 +45,6 @@ html {
 .nav-top {
     top: 0;
     left: 0;
-
-    .nav-link {
-        padding: .5rem;
-    }
 }
 
 /*   nav-footer   */
@@ -61,12 +53,10 @@ html {
     left: 0;
 
     .nav-list > .nav-item {
-        @include box-sizing(border-box );
+        @include box-sizing( border-box );
         width: 50%;
 
-        .nav-link {
-            width: 100%; 
-        }
+        .nav-link { width: 100%; }
         
         &:not(:first-child) {
             border: 1px none #fff;
@@ -74,6 +64,33 @@ html {
         }
     }
 }
+
+/*  item_downMenu  */
+.item_downMenu {
+    position: relative;
+
+    .menu_item {
+        position: absolute;
+        width: 100%;
+        background: $nav-bg;
+
+        li,
+        li .class_link { width: 100%; }
+
+        li {
+            @include box-sizing( border-box );
+            border: 1px none rgba(245, 245, 245, 0.8);
+        }
+    }
+}
+
+.item_downMenu.up .menu_item {
+    top: $menu_up_top;
+    
+    li { border-style: solid solid none solid; }
+}
+
+.item_downMenu.down .menu_item li { border-style: none solid solid solid; }
 
 .msg-dot {
     position: relative;
@@ -84,7 +101,7 @@ html {
         position: absolute;
         width: 10px;
         height: 10px;
-        border-radius:5px;
+        @include border-radius( 5px );
         background-color: #f74c31;
         top: -5px;
         right: -5px;    
