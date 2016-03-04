@@ -1,0 +1,34 @@
+/* line 1, ../sass/add_shop.scss */
+body {
+  background-color: #eee; }
+
+/* line 4, ../sass/add_shop.scss */
+.form_nav {
+  position: static;
+  background-color: rgba(239, 112, 112, 0.9); }
+  /* line 8, ../sass/add_shop.scss */
+  .form_nav .nav-link,
+  .form_nav .nav-name {
+    color: #fff;
+    font-weight: normal; }
+
+/* line 15, ../sass/add_shop.scss */
+.form_top {
+  margin-top: 0; }
+
+/* line 19, ../sass/add_shop.scss */
+.weui_cell_ft {
+  font-size: 12px; }
+
+/* line 22, ../sass/add_shop.scss */
+#add_shop .weui_cell_ft.image_icon {
+  height: 50px; }
+  /* line 25, ../sass/add_shop.scss */
+  #add_shop .weui_cell_ft.image_icon::after {
+    top: initial;
+    bottom: 50%;
+    margin-bottom: -4px; }
+
+/* line 32, ../sass/add_shop.scss */
+.warning {
+  color: #9e9b9b; }

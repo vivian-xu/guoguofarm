@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--- start : Meta  -->
+    <meta charset="utf-8">
+	<meta name="description" content="果果庄园，店铺, 订购，列表">
+    <!-- start : Mobile Specific  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <!-- end : Mobile Specific  -->
+    <!-- end : Meta -->
+	<title>订购列表</title>
+    <!-- start : css -->
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel ="stylesheet" href="../fonts2/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/orders_list.css">
+    <link rel="stylesheet" href="../css/sell_lists.css">
+    <!-- end : css -->
+    <!-- start: javascript -->
+    <script type="text/javascript" src="../js/libraries/jquery.min.js"></script>
+    <!-- end: javascript -->
+</head>
+<body>
+    <nav class="order_nav navbar nav-top">
+        <ul class="nav-list center">
+            <li class="nav-item float_left">
+                <a id="nav-back" class="nav-link" href="#">
+                    <span class="icon-chevron-thin-left"></span>
+                </a>
+            </li>
+            <li class="nav-item item_downMenu down nav_center">
+                <a class="nav-link" href="#">
+                    订购列表<span class="icon-chevron-thin-down down_icon"></span>
+                </a>
+                <ul class="menu_item" style="display: none;">
+                    <li class="item1"><a href="sell_lists.min.html" class="class_link">订单列表 </a></li>
+                    <li class="item2"><a href="orders_list.min.html" class="class_link">订购列表 </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="sell_lists">
+        <div class="order_list">
+            <p class="order_time"> 2015/05/09 | 19:20 </p>
+            <div class="order_products">
+                <p class="state_done">已完成</p>
+                <div class="product_item clearfix">
+                    <img src="../images/products1.jpg" class="product_avater float_left">
+                    <p class="info_right">
+                        <span class="product_name">我是苹果果果果果果果果</span><br/>
+                        规格 : <span class="">通货</span><br/>
+                        ¥ <span class="price"> 0.6/斤 x 2 </span>
+                    </p>
+                </div>
+                <div class="product_item clearfix">
+                    <img src="../images/products1.jpg" class="product_avater float_left">
+                    <p class="info_right">
+                        <span class="product_name">我是苹苹果果果果果果果</span><br/>
+                        规格 : <span class="">通货</span><br/>
+                        ¥ <span class="price"> 0.6/斤 x 2 </span>
+                    </p>
+                </div>
+                <div class="sum clearfix">
+                    <p class="float_right">总计：¥
+                    <span class="sum_price"> 6.20</span></p>
+                </div>
+                <div class="shop_action">
+                    <a href="sell_details.min.html" class="action_btn float_right contact_action weui_btn weui_btn_mini weui_btn_default"> 进入详情 </a>
+                    <a href="javascript:void(0);" class="action_btn float_right contact_action weui_btn weui_btn_mini weui_btn_primary"> 联系他 </a>
+                    <p class="shop_contact"> 购买人 : 老王 <br/>电话 : 188 888 8898</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order_list">
+            <p class="order_time"> 2015/05/09 | 19:20 </p>
+            <div class="order_products">
+                <p class="state_doing">进行中</p>
+                <div class="product_item clearfix">
+                    <img src="../images/products1.jpg" class="product_avater float_left">
+                    <p class="info_right">
+                        <span class="product_name">我是苹果果果果果果果果果果果果果果果</span><br/>
+                        规格 : <span class="">通货</span><br/>
+                        ¥ <span class="price"> 0.6/斤 x 2 </span>
+                    </p>
+                </div>
+                <div class="sum clearfix">
+                    <p class="float_right">总计：¥
+                    <span class="sum_price"> 6.20</span></p>
+                </div>
+                <div class="shop_action">
+                    <a href="sell_details.min.html" class="action_btn float_right contact_action weui_btn weui_btn_mini weui_btn_default"> 进入详情 </a>
+                    <a href="javascript:void(0);" class="action_btn float_right contact_action weui_btn weui_btn_mini weui_btn_primary"> 联系他 </a>
+                    <p class="shop_contact"> 购买人 : 老王 <br/>电话 : 188 888 8898</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is footer-navbar  -->
+    <nav id="footer-nav" class="navbar nav-footer">
+        <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="attention_lists.min.html"><span class="icon-heart block-icon"></span>关注列表
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="shop_home.min.html"><span class="icon-shop block-icon"></span>我的店铺
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon-cart block-icon"></span>购物车
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="my_home.min.html"><span class="icon-user block-icon"></span>我
+                </a></li>
+            </ul>
+    </nav>
+</body>
+<script type="text/javascript" src="../js/nav.min.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+	<!--- start : Meta  -->
+	<meta charset="utf-8">
+	<meta name="description" content="果果庄园，店铺, 关注，列表">
+	 <!-- start : Mobile Specific  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<!-- end : Mobile Specific  -->
+	<!-- end : Meta -->
+	<title>下单确认</title>
+	<!-- start : css -->
+	<link rel="stylesheet" href="../css/weui.min.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../fonts2/style.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/place_order.css">
+	<!-- end : css -->
+	<!-- start: javascript -->
+	<script type="text/javascript" src="../js/libraries/jquery.min.js"></script>
+	<!-- end: javascript -->
+	</head>
+	<body>
+		<nav class="order_nav navbar nav-top form_nav">
+	        <ul class="nav-list center clearfix">
+	            <li class="nav-item float_left">
+	                <a id="nav-back" class="nav-link" href="#">
+	                    <span class="icon-chevron-thin-left"></span>
+	                </a>
+	            </li>
+	            <li class="nav-item nav_center">
+	                <h1 class="nav-name"> 预定确认 </h1>
+	            </li>
+	        </ul>
+	    </nav>
+		<section id="place_order">
+			<div class="weui_cells_title">选购物品</div>
+			<div class="order_shop">
+			    <p class="icon-home3">
+			        <span class="shop_name"> 我的果园 </span>
+			        <span class="inshop_icon icon-chevron-thin-right"></span>
+			    </p>
+			</div>
+			<a class="product_item clearfix" href="product.min.html">
+			    	<img src="../images/products1.jpg" class="product_avater">
+				<p class="info_right">
+			       <span class="product_name">我是苹果果果果果果果果</span>
+			        规格 : <span class="">通货</span><br/>
+			        ¥ <span class="price"> 0.6/斤 </span>
+			    </p>
+		   	 </a>
+
+			<form action="" method="post" class="weui_cells weui_cells_form">
+				<div class="weui_cell">
+				    <div class="weui_cell_hd">
+				        <label class="weui_label">数量</label>
+				    </div>
+				    <div class="weui_cell_bd weui_cell_primary">
+				        <input class="weui_input right" name="num" type="text" placeholder="0" required="required" />
+				    </div>
+				</div>
+			    <div class="weui_cell">
+			        <div class="weui_cell_hd">
+			            <label class="weui_label">提货时间</label>
+			        </div>
+			        <div class="weui_cell_bd weui_cell_primary">
+			            <input class="weui_input right" name="time" type="datetime" placeholder="未填写" required="required"/>
+			        </div>
+			    </div>
+			  </form>
+
+			<div class="weui_cells_title">联系人信息</div>
+			<form action="" method="post" class="weui_cells weui_cells_form">
+			    <div class="weui_cell">
+			        <div class="weui_cell_hd">
+			            <label class="weui_label">联系人姓名</label>
+			        </div>
+			        <div class="weui_cell_bd weui_cell_primary">
+			            <input class="weui_input right" type="text" name="name"placeholder="张xx" required="required"/>
+			        </div>
+			    </div>
+			    <div class="weui_cell">
+			        <div class="weui_cell_hd">
+			            <label class="weui_label">联系人电话</label>
+			        </div>
+			        <div class="weui_cell_bd weui_cell_primary">
+			            <input class="weui_input right" type="tel" name="phone" placeholder="180 000 000 00" required="required" />
+			        </div>
+			    </div>
+			</form>
+			<div class="weui_cells_title">备注</div>
+			<form action="" method="post" class="weui_cells weui_cells_form">
+			       <div class="weui_cell">
+			            	<div class="weui_cell_bd weui_cell_primary">
+			                	<textarea class="weui_textarea" placeholder="未添加" rows="4"></textarea>
+			            	</div>
+			       </div>
+			 </form>
+		</section>
+
+		<!-- This is footer-navbar  -->
+		<nav id="footer-nav" class="navbar nav-footer fixed">
+        	    <p class="sum">应付总额：¥
+        	    <span class="sum_price"> 6.20</span></p>
+	            <a class="nav-link order" href="javascript::void(0)">确认预定</a>
+		</nav>
+	</body>
+	<script type="text/javascript" src="../js/nav.min.js"></script>
+</html>

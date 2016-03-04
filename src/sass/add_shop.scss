@@ -1,0 +1,86 @@
+body {
+    background-color: #eee;
+}
+#add_shop { margin: 2.5rem 0 3rem 0; }
+.form_nav {
+    background-color: rgba(239, 112, 112, 0.9);
+
+    .nav-link,
+    .nav-name {
+        color: #fff;
+        font-weight: normal;
+    }
+}
+
+// chose
+#footer-nav-save .nav-item {
+    width: 100%;
+}
+
+.weui_cell_ft { font-size: 12px; }
+
+#add_shop .weui_cell_ft.image_icon {
+    height: 50px;
+
+    &::after {
+        top: initial;
+        bottom: 50%;
+        margin-bottom: -4px;
+    }
+}
+
+.warning {
+    color:  #9e9b9b;
+}
+
+// key frames
+
+@keyframes slideIn {
+    from {
+        -webkit-transform : translate3d( 100%, 0, 0);
+                transform : translate3d( 100%, 0, 0);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate3d( 0, 0, 0 );
+                transform: translate3d( 0, 0, 0 );
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    from {
+        -webkit-transform: translate3d( 0, 0, 0);
+                transform: translate3d( 0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d( -100%, 0, 0);
+                transform: translate3d( -100%, 0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        -webkit-transform: translate3d( 0, 0, 0);
+                transform: translate3d( 0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d( -100%, 0, 0);
+                transform: translate3d( -100%, 0, 0);
+        opacity: 0;
+    }
+}
+
+// animation
+.slideIn {
+    -webkit-animation: slideIn 1s forwards;
+        animation: slideIn 1s forwards;
+}
+
+.slideOut {
+    -webkit-animation: slideOut .2s forwards;
+            animation: slideOut .2s forwards;
+}

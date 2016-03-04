@@ -1,17 +1,17 @@
-body {
-    padding-top: 3rem;
-}
+
 h1 {
     margin: 2rem auto;
     font-size: 32px;
     text-align: center;
 }
 .weui_cells_form {
-    &::before {
+    &::before,
+    &::after {
         display: none;
     }
 
     .weui_label {
         width: 6em;
     }
+
 }

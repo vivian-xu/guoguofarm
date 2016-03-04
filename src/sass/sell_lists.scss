@@ -1,0 +1,17 @@
+#sell_lists {
+    margin-top: 2.3rem;
+    .order_time {
+        border: 1px none #EEEEEE;
+        border-style: none none solid none;
+    }
+    
+    p[class*= "state_"] {
+        font-weight: bold;
+        font-size: 14px;
+        border: 1px none #EEEEEE;
+        border-style: none none solid none;
+    }
+    
+    .state_done { color: #13B113; }
+    .state_doing { color: #f00;}
+}

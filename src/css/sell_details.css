@@ -1,0 +1,71 @@
+/* line 2, ../sass/sell_details.scss */
+.state_info {
+  text-align: center;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 20px;
+  font-weight: bold; }
+
+/* line 10, ../sass/sell_details.scss */
+#sell_details {
+  margin-top: 2.2rem; }
+
+/* line 11, ../sass/sell_details.scss */
+.nav-name {
+  color: #000; }
+
+/* line 13, ../sass/sell_details.scss */
+h2.sell_name,
+.get_code {
+  border-top: 8px solid #eee; }
+
+/* -- get_code -- */
+/* line 18, ../sass/sell_details.scss */
+.get_code {
+  text-align: center; }
+  /* line 21, ../sass/sell_details.scss */
+  .get_code .get_num,
+  .get_code .code {
+    margin: .5rem; }
+  /* line 24, ../sass/sell_details.scss */
+  .get_code .get_num {
+    color: red;
+    font-weight: bold; }
+  /* line 29, ../sass/sell_details.scss */
+  .get_code .code {
+    width: 60%;
+    max-width: 460px; }
+
+/* line 35, ../sass/sell_details.scss */
+.get_code {
+  padding: 10px 0; }
+
+/* -- order_info -- */
+/* line 38, ../sass/sell_details.scss */
+.order_info {
+  margin: 5%; }
+  /* line 41, ../sass/sell_details.scss */
+  .order_info h3 {
+    @box-sizing ( border-box );
+    border-bottom: 1px solid #f5dddd; }
+  /* line 46, ../sass/sell_details.scss */
+  .order_info p {
+    margin: .5rem 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #615B5B; }
+
+/*  --- products --- */
+/* line 55, ../sass/sell_details.scss */
+h2.sell_name {
+  margin-top: 10px;
+  padding: .3rem 5px;
+  border-bottom: 1px solid #eee; }
+
+/* line 62, ../sass/sell_details.scss */
+.shop_contact {
+  width: 100%; }
+
+/* line 64, ../sass/sell_details.scss */
+#sell_details .product_name {
+  font-weight: normal; }

@@ -1,0 +1,20 @@
+#sell_lists {
+  margin-top: 2.3rem; }
+#sell_lists .order_time {
+  border: 1px none #EEEEEE;
+  border-style: none none solid none; }
+#sell_lists p[class*="state_"] {
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px none #EEEEEE;
+  border-style: none none solid none; }
+#sell_lists .state_done {
+  color: #13B113; }
+#sell_lists .state_doing {
+  color: #f00; }
+
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBQUEsV0FBWTtFQUNSLFVBQVUsRUFBRSxNQUFNO0FBQ2xCLHVCQUFZO0VBQ1IsTUFBTSxFQUFFLGdCQUFnQjtFQUN4QixZQUFZLEVBQUUsb0JBQW9CO0FBR3RDLDhCQUFvQjtFQUNoQixXQUFXLEVBQUUsSUFBSTtFQUNqQixTQUFTLEVBQUUsSUFBSTtFQUNmLE1BQU0sRUFBRSxnQkFBZ0I7RUFDeEIsWUFBWSxFQUFFLG9CQUFvQjtBQUd0Qyx1QkFBWTtFQUFFLEtBQUssRUFBRSxPQUFPO0FBQzVCLHdCQUFhO0VBQUUsS0FBSyxFQUFFLElBQUkiLCJzb3VyY2VzIjpbInNlbGxfbGlzdHMuc2NzcyJdLCJuYW1lcyI6W10sImZpbGUiOiJzZWxsX2xpc3RzLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbIiNzZWxsX2xpc3RzIHtcbiAgICBtYXJnaW4tdG9wOiAyLjNyZW07XG4gICAgLm9yZGVyX3RpbWUge1xuICAgICAgICBib3JkZXI6IDFweCBub25lICNFRUVFRUU7XG4gICAgICAgIGJvcmRlci1zdHlsZTogbm9uZSBub25lIHNvbGlkIG5vbmU7XG4gICAgfVxuICAgIFxuICAgIHBbY2xhc3MqPSBcInN0YXRlX1wiXSB7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIGJvcmRlcjogMXB4IG5vbmUgI0VFRUVFRTtcbiAgICAgICAgYm9yZGVyLXN0eWxlOiBub25lIG5vbmUgc29saWQgbm9uZTtcbiAgICB9XG4gICAgXG4gICAgLnN0YXRlX2RvbmUgeyBjb2xvcjogIzEzQjExMzsgfVxuICAgIC5zdGF0ZV9kb2luZyB7IGNvbG9yOiAjZjAwO31cbn1cbiJdfQ== */
+
+/*# sourceMappingURL=maps/sell_lists.css.map */

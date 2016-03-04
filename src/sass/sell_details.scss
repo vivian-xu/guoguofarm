@@ -1,0 +1,66 @@
+
+.state_info {
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sell_details { margin: 2.5rem 0 3rem; }
+.nav-name { color: #000; }
+
+h2.sell_name,
+.get_code { border-top: 8px solid #eee; }
+
+
+/* -- get_code -- */
+.get_code {
+    text-align: center;
+
+    .get_num,
+    .code { margin: .5rem; }
+
+    .get_num {
+        color: red;
+        font-weight:bold;
+    }
+
+    .code {
+        width: 60%;
+        max-width: 460px;
+    }
+}
+
+.get_code { padding: 10px 0; }
+
+    /* -- order_info -- */
+.order_info {
+    margin: 5%;
+
+    h3 {
+        @box-sizing( border-box );
+        border-bottom: 1px solid #f5dddd;
+    }
+
+    p {
+        margin: .5rem 0;
+        font-size: 12px ;
+        line-height: 1.5;
+        color: #615B5B;
+    }
+}
+
+/*  --- products --- */
+h2.sell_name {
+    margin-top: 10px;
+    padding: .3rem 5px;
+    border-bottom: 1px solid #eee;
+}
+a.product_item {
+    display: block;
+
+    .info_right { color: #000; }
+}
+.shop_contact { width: 100%;}
+#sell_details .product_name { font-weight: normal; }

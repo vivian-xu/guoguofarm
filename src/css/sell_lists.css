@@ -1,0 +1,19 @@
+/* line 1, ../sass/sell_lists.scss */
+#sell_lists {
+  margin-top: 2.3rem; }
+  /* line 3, ../sass/sell_lists.scss */
+  #sell_lists .order_time {
+    border: 1px none #EEEEEE;
+    border-style: none none solid none; }
+  /* line 8, ../sass/sell_lists.scss */
+  #sell_lists p[class*="state_"] {
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px none #EEEEEE;
+    border-style: none none solid none; }
+  /* line 15, ../sass/sell_lists.scss */
+  #sell_lists .state_done {
+    color: #13B113; }
+  /* line 16, ../sass/sell_lists.scss */
+  #sell_lists .state_doing {
+    color: #f00; }

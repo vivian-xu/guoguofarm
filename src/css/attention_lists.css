@@ -1,0 +1,87 @@
+/* line 1, ../sass/attention_lists.scss */
+body {
+  min-width: 270px; }
+
+/* nav  */
+/* line 3, ../sass/attention_lists.scss */
+.order_nav.navbar {
+  background-color: rgba(239, 112, 112, 0.9);
+  min-width: 190px; }
+
+/* line 8, ../sass/attention_lists.scss */
+.nav-name, .nav-link,
+.class_link {
+  color: #000; }
+
+/* line 14, ../sass/attention_lists.scss */
+.nav-link:hover,
+.class_link:hover {
+  color: #eee; }
+/* line 16, ../sass/attention_lists.scss */
+.nav-link:active,
+.class_link:active {
+  color: #F30939; }
+/* line 18, ../sass/attention_lists.scss */
+.nav-link [class*="icon-"],
+.class_link [class*="icon-"] {
+  font-weight: bold;}
+
+/* line 21, ../sass/attention_lists.scss */
+.item_downMenu .menu_item {
+  left: 0;
+  width: 110%;
+  background: rgba(239, 112, 112, 0.9); }
+  /* line 26, ../sass/attention_lists.scss */
+  .item_downMenu .menu_item li {
+    border: 1px none rgba(220, 155, 155, 0.8); }
+
+/* line 29, ../sass/attention_lists.scss */
+.item_downMenu .nav-link,
+.item_downMenu .class_link {
+  font-size: 14px; }
+
+/* product_item  */
+/* line 33, ../sass/attention_lists.scss */
+.product_item {
+  padding: 10px 0;
+  border: 1px none #eee;
+  border-style: none none solid none; }
+  /* line 38, ../sass/attention_lists.scss */
+  .product_item .product_avater {
+    width: 35%;
+    max-width: 300px;
+    margin-right: 5%; }
+  /* line 44, ../sass/attention_lists.scss */
+  .product_item .info_right {
+    margin-left: 40%;
+    overflow: hidden; }
+    /* line 48, ../sass/attention_lists.scss */
+    .product_item .info_right .product_name {
+      font-size: 14px;
+      font-weight: bold; }
+
+/*
+    --- order_list ---
+ */
+/* line 59, ../sass/attention_lists.scss */
+[class*="role_"] {
+  font-weight: 800;
+  border: 1px solid #ddd; }
+
+/* line 64, ../sass/attention_lists.scss */
+.role_one {
+  color: #0932e0; }
+
+/* line 65, ../sass/attention_lists.scss */
+.role_two {
+  color: #ff0101; }
+
+/* line 66, ../sass/attention_lists.scss */
+.role_three {
+  color: #00d400; }
+
+/* line 68, ../sass/attention_lists.scss */
+.order_products {
+  overflow: hidden;
+  margin: 2.5rem 5px;
+  font-size: 10px; }

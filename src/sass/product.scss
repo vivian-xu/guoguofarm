@@ -2,20 +2,16 @@
 @import "compass/css3/box-sizing";
 @import "compass/css3/border-radius";
 
-$nav-bg: rgba(136, 129, 129, 0.8);
-$nav-bg-hover: #e3f3dd;
-$nav-bg-active: #0e90d2;
 $product_name_fs: 14px;
 $product_name_margin: 0px;
-$product_name_height: $product_name_fs * 3; 
+$product_name_height: $product_name_fs * 3;
 $identificate_fs: 10px;
 $shop_avater_height: 4rem;
 $come_shop_padding: 5px;
 $come_shop_height: 66px;
 
-html {
-    font-size: 14px;
-}
+html { font-size: 14px; }
+body { min-width: 270px; }
 
 /*   nav-footer   */
 
@@ -24,21 +20,31 @@ html {
     .nav-list > .nav-item { width: (1/3)*100%; }
 
     .nav-link {
-        font-size: 10px;
-        
+        font-size: 16px;
+
         [class*="icon-"]::before { display: block; }
     }
 
-    .shopping_cart { background: rgba(255, 173, 0, 0.8); }
+    .shop-icon {
+        color: #000;
+        &:visited,
+        &:hover { color: #000;}
+        &:active { color: #ef7070;}
+    }
 
-    .order { background: rgba(255, 0, 0, 0.8); }
+    .shopping_cart { background: rgb(255, 173, 0); }
+
+    .order { background: rgb(255, 0, 0); }
 }
 
-
-/* 
-    -- section : product-- 
+.nav-footer.product_page {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid #eee;
+}
+/*
+    -- section : product--
  */
-#product { margin: 2.5rem 0;}
+#product { margin-bottom: 4rem;}
 
 /* banner & name & shop-info */
 .product_banner {
@@ -67,7 +73,7 @@ html {
             border-style: none none none solid;
         }
     }
-    
+
     .product_name {
         overflow: hidden;
         height: $product_name_height;
@@ -75,7 +81,7 @@ html {
 
     .price {
         font-size: .5rem;
-        
+
         .current_price {
             color: red;
             font-size: 1.2rem;
@@ -96,7 +102,7 @@ html {
     .come_fonts,
     .come_fonts::before,
     .shop_name { @include inline-block; }
-    
+
     .come_fonts::before,
     .shop_avater,
     .shop_name { vertical-align: middle; }
@@ -108,12 +114,12 @@ html {
             width: 1px;
         }
 
-        .shop_link { 
+        .shop_link {
             color: #000;
 
-            &:hover, 
+            &:hover,
             &:active { color: #fff; }
-        } 
+        }
     }
 
     > .shop_avater {

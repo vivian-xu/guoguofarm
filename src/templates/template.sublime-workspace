@@ -1,0 +1,1380 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"html",
+				"html5doctor"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"b",
+				"background"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n    <!--- start : Meta  -->\n    <meta charset=\"utf-8\">\n	<meta name=\"description\" content=\"果果庄园，店铺, 编辑\">\n    <!-- start : Mobile Specific  -->\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n    <!-- end : Mobile Specific  -->\n    <!-- end : Meta -->\n	<title>编辑店铺</title>\n    <!-- start : css -->\n    <link rel=\"stylesheet\" href=\"../css/weui.min.css\">\n    <link rel=\"stylesheet\" href=\"../css/reset.css\">\n    <link rel=\"stylesheet\" href=\"../fonts2/style.css\">\n    <link rel=\"stylesheet\" href=\"../css/nav.css\">\n    <link rel=\"stylesheet\" href=\"../css/add_shop.css\">\n    <!-- end : css -->\n</head>\n<body>\n	<nav class=\"order_nav navbar nav-top form_nav\">\n        <ul class=\"nav-list center clearfix\">\n            <li class=\"nav-item float_left\">\n                <a class=\"nav-link\" href=\"#\">\n                    <span class=\"icon-chevron-thin-left\"></span>\n                </a>\n            </li>\n            <li class=\"nav-item nav_center\">\n                <h1 class=\"nav-name\"> 编辑店铺 </h1>\n            </li>\n        </ul>\n    </nav>\n\n    <section id=\"add_shop\">\n    	<form action method=\"post\" class=\"weui_cells weui_cells_access form_top\">\n    		<a class=\"weui_cell\" href=\"javascript::\">\n    		    <div class=\"weui_cell_bd weui_cell_primary\">\n    		    	<p> 店铺头像 </p>\n    		    </div>\n    		    <div class=\"weui_cell_ft image_icon\">\n    		    	<img src=\"../images/banner_bg1.jpg\" style=\"width: 50px; height:50px;\">\n    		    </div>\n    		</a>\n    		<a class=\"weui_cell\" href=\"javascript::\">\n    		    <div class=\"weui_cell_bd weui_cell_primary\">\n    		    	<p> 店铺名称 </p>\n    		    </div>\n    		    <div class=\"weui_cell_ft\"> 店铺叫什么呢？ </div>\n    		</a>\n    		<a class=\"weui_cell\" href=\"javascript::\">\n    		    <div class=\"weui_cell_bd weui_cell_primary\">\n    		    	<p> 店铺介绍 </p>\n    		    </div>\n    		    <div class=\"weui_cell_ft\"> 向大家介绍一下你的店铺吧！ </div>\n    		</a>\n    		<a class=\"weui_cell\" href=\"javascript::\">\n    		    <div class=\"weui_cell_bd weui_cell_primary\">\n    		    	<p> 主营类目  </p>\n    		    </div>\n    		    <div class=\"weui_cell_ft\"> 你的店铺卖什么？ </div>\n    		</a>\n\n    		<a class=\"weui_cell\" href=\"javascript::\">\n    		    <div class=\"weui_cell_bd weui_cell_primary\">\n    		    	<p> 店铺介绍 </p>\n    		    </div>\n    		    <div class=\"weui_cell_ft\"> 向大家介绍一下你的店铺吧！ </div>\n    		</a>\n            <a class=\"weui_cell\" href=\"javascript::\">\n                <div class=\"weui_cell_bd weui_cell_primary\">\n                    <p> 店铺地址 </p>\n                </div>\n                <div class=\"weui_cell_ft\"> 添加地址 </div>\n            </a>\n        </form>\n\n            <div class=\"weui_cells_title\">允许附近的人发现地址信息</div>\n            <div class=\"weui_cells weui_cells_form\">\n                <div class=\"weui_cell weui_cell_switch\">\n                    <div class=\"weui_cell_hd weui_cell_primary\"> 允许附近的人可见 </div>\n                    <div class=\"weui_cell_ft\">\n                          <input class=\"weui_switch\" type=\"checkbox\">\n                    </div>\n                </div>\n            </div>\n\n\n        <div class=\"weui_cells_title\"> 店铺介绍 </div>\n        <div class=\"weui_cells weui_cells_form\">\n            <div class=\"weui_cell\">\n                <div class=\"weui_cell_bd weui_cell_primary\">\n                    <textarea class=\"weui_textarea\" placeholder=\"请输入您的店铺介绍\" rows=\"3\"></textarea>\n                    <div class=\"weui_textarea_counter\"><span>0</span>/200</div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"weui_cells_title\"> 添加店铺地址 </div>\n        <div class=\"weui_cells\">\n            <div class=\"weui_cell weui_cell_select weui_select_after\">\n                <div class=\"weui_cell_hd\">\n                    省级\n                </div>\n                <div class=\"weui_cell_bd weui_cell_primary\">\n                    <select class=\"weui_select\" name=\"select2\">\n                        <option value=\"1\">陕西省</option>\n                        <option value=\"2\">山西省</option>\n                        <option value=\"3\">云南省</option>\n                    </select>\n                </div>\n            </div>\n            <div class=\"weui_cell weui_cell_select weui_select_after\">\n                <div class=\"weui_cell_hd\">\n                    市级\n                </div>\n                <div class=\"weui_cell_bd weui_cell_primary\">\n                    <select class=\"weui_select\" name=\"select2\">\n                        <option value=\"1\">西安市</option>\n                        <option value=\"2\">咸阳省</option>\n                    </select>\n                </div>\n            </div>\n            <div class=\"weui_cell weui_cell_select weui_select_after\">\n                <div class=\"weui_cell_hd\">\n                    镇级\n                </div>\n                <div class=\"weui_cell_bd weui_cell_primary\">\n                    <select class=\"weui_select\" name=\"select2\">\n                        <option value=\"1\">陕西省</option>\n                        <option value=\"2\">山西省</option>\n                        <option value=\"3\">云南省</option>\n                    </select>\n                </div>\n            </div>\n        </div>\n\n    </section>\n</body>\n",
+			"file": "add_shop.html",
+			"file_size": 5527,
+			"file_write_time": 1456281708000000,
+			"settings":
+			{
+				"buffer_size": 5217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "attention_lists.html",
+			"settings":
+			{
+				"buffer_size": 5418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "id-card.html",
+			"settings":
+			{
+				"buffer_size": 3448,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mesg-signin.html",
+			"settings":
+			{
+				"buffer_size": 1020,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "order_details.html",
+			"settings":
+			{
+				"buffer_size": 3414,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "orders_list.html",
+			"settings":
+			{
+				"buffer_size": 5352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<!-- start: Meta -->\n	<meta charset=\"utf-8\">\n	<title>果品详情</title>\n	<meta name=\"description\" content=\"果果庄园，果品详情\">\n	<meta name=\"author\" content=\"Vivian\">\n	<meta name=\"keyword\" content=\"果果庄园，果品详情\">\n	<!-- end: Meta -->\n	\n	<!-- start: Mobile Specific -->\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n	<!--\n    Ask IE to behave like a modern browser\n    See: https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible\n    -->   \n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n	<!-- end: Mobile Specific -->\n\n	<!-- start: CSS -->\n	<!--  Fonts CSS 文件 -->\n	<link rel=\"stylesheet\" href=\"../fonts2/style.css\">\n	<link rel=\"stylesheet\" href=\"../fonts4/style.css\">\n	<!--  Reset CSS 文件 -->\n    <link rel=\"stylesheet\" href=\"../css/reset.css\">\n    <!--\n    Our own stylesheet.\n    --> \n    <link rel=\"stylesheet\" href=\"../css/nav.css\">\n    <link rel=\"stylesheet\" href=\"../css/product.css\">\n	<!-- end: CSS -->\n    <!-- start: javascript -->\n    <script type=\"text/javascript\" src=\"../js/jquery.min.js\"></script>\n    <!-- end: javascript -->\n</head>\n<body>\n    <!-- This is top-navbar  -->\n	<nav id=\"top-nav\" class=\"navbar nav-top\">\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n		        <a class=\"nav-link\" href=\"#\"><span class=\"icon-chevron-thin-left\"></span></a>\n            </li>\n            <li class=\"nav-item float_right\">\n		        <a class=\"nav-link\" href=\"#\"><span class=\"icon-cart\"></span></a>\n		        <a class=\"nav-link\" href=\"#\"><span class=\"icon-share\"></span></a>\n            </li>\n        </ul>        \n    </nav>\n    <!--\n   \n         content \n                        \n                    -->\n	<section id=\"product\">\n		<div class=\"product_banner\">\n            <img class=\"banner_bg\" src=\"images/products1.jpg\"/>\n		</div>\n		<div class=\"product_tag\">\n			<p class=\"identificate float_right\">\n                <span class=\"icon-user-tie\">身份认证</span>\n                <span class=\"icon-user-tie\">企业认证</span>\n            </p>\n			<p class=\"product_name\">我是水果果果果我是水果果果果我是水果果果果</p>\n			<p class=\"price\"> ¥ \n				<span class=\"current_price\">300</span>\n                <span class=\"before_price\">¥300</span>\n            </p>\n            \n		</div>\n		<div class=\"come_shop\">\n			\n			<img class=\"shop_avater\" src=\"images/banner_b1.jpg\"/>\n			<p class=\"shop_name\"> 我的果园 <br/> \n        		<span class=\"shop_address\">陕西渭南合阳甘井镇</span>\n        	</p>\n        	<p class=\"come_fonts float_right\"><a href=\"\" class=\"shop_link\">进入店铺<span class=\"icon-chevron-thin-right\"></span></a></p>\n        	\n		</div>\n		<h2 class=\"detail_title\">果品详情</h2>\n		<div class=\"product_detail\">\n			<img src=\"images/products1.jpg\"/>\n			<p>我家的苹果最好吃啊～ 最好吃～～</p>\n		</div>\n	</section>          \n\n   	<!-- This is footer-navbar  -->\n	<nav id=\"footer-nav\" class=\"navbar nav-footer fixed product_page\">\n		<ul class=\"nav-list\">\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"#\"><span class=\"icon-shop\"></span>进入店铺 \n            </a></li>\n            <li class=\"nav-item shopping_cart\"><a class=\"nav-link\" href=\"#\">放入购物车\n            </a></li>\n            <li class=\"nav-item order\"><a class=\"nav-link\" href=\"#\">立即下单\n            </a></li>\n        </ul>\n	</nav>\n</body>\n<script type=\"text/javascript\" src=\".../js/nav.js\"></script>\n</html>",
+			"file": "product.html",
+			"file_size": 3533,
+			"file_write_time": 1456208576000000,
+			"settings":
+			{
+				"buffer_size": 3322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sell_details.html",
+			"settings":
+			{
+				"buffer_size": 3271,
+				"line_ending": "CR"
+			}
+		},
+		{
+			"file": "sell_lists.html",
+			"settings":
+			{
+				"buffer_size": 4811,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 16995,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/bh_core.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1558,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shop.html",
+			"settings":
+			{
+				"buffer_size": 7895,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shop_home.html",
+			"settings":
+			{
+				"buffer_size": 14811,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "success-signin.html",
+			"settings":
+			{
+				"buffer_size": 1000,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "@import \"compass/css3/inline-block\";\n@import \"compass/css3/box-sizing\";\n@import \"compass/css3/border-radius\";\n\n$navTop: (nav-item-back: 10%, nav-item-input: 80%, nav-item-icon: 10%);\n$nav-bg: rgba(239, 112, 112, 0.9);\n$menu_up_top: -7rem;\n\nhtml { font-size: 16px; }\nbody { min-width: 270px; } \n\n.navbar,\n.nav-list { width: 100%; }\n\n.class_link,\n.nav-link,\n.nav-name { color: #EF817D; }\n\n.class_link,\n.nav-link {\n    @include inline-block;\n    @include box-sizing( border-box );\n    padding: .5rem .5rem;\n\n    &:focus { outline: none; }\n    &:hover { color: #edd; }\n    &:active { color:#353131; }\n}\n/*  fixed navbar 设置  */\n.navbar.fixed {\n    background-color: $nav-bg; \n\n    .class_link,\n    .nav-link,\n    .nav-name { \n        color: #fff;\n        &:focus { outline: none; }\n        &:hover { color: #edd; }\n        &:active { color:#353131; }\n     }\n}\n\n.navbar {\n    position: fixed;\n    z-index: 10;\n    min-width: 270px; \n\n    .nav-list {\n        font-size: 0;\n    \n        > [class*= \"nav-item\"] {\n            @include inline-block;\n            font-size: 16px;\n            text-align: center;\n        }\n    }\n\n    .nav-list.center { \n        text-align: center;\n    \n        .nav-item .nav-name { padding: .5rem; }\n    }\n}\n\n/*   nav-top    */\n.nav-top {\n    top: 0;\n    left: 0;\n    background-color:transparent;\n}\n\n/*   nav-footer   */\n.nav-footer {\n    bottom: 0;\n    left: 0;\n\n    .nav-list > .nav-item {\n        @include box-sizing( border-box );\n        width: 50%;\n\n        .nav-link { width: 100%; }\n        \n        &:not(:first-child) {\n            border: 1px none #fff;\n            border-style: none none none solid;\n        }\n    }\n}\n\n/*  item_downMenu  */\n.item_downMenu {\n    position: relative;\n\n    .menu_item {\n        position: absolute;\n        width: 100%;\n        background: $nav-bg;\n\n        li,\n        li .class_link { width: 100%; }\n\n        li {\n            @include box-sizing( border-box );\n            border: 1px none rgba(245, 245, 245, 0.8);\n        }\n    }\n}\n\n.item_downMenu.up .menu_item {\n    top: $menu_up_top;\n    \n    li { border-style: solid solid none solid; }\n}\n\n.item_downMenu.down .menu_item li { border-style: none solid solid solid; }\n\n.msg-dot {\n    position: relative;\n    \n    &:after {\n        display: block;\n        content: \"\";\n        position: absolute;\n        width: 10px;\n        height: 10px;\n        @include border-radius( 5px );\n        background-color: #f74c31;\n        top: -5px;\n        right: -5px;    \n    }\n}\n\n",
+			"file": "/Users/vivian/Documents/git/guoguofarm/src/sass/nav.scss",
+			"file_size": 2490,
+			"file_write_time": 1456210133000000,
+			"settings":
+			{
+				"buffer_size": 2487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 29349,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/Autoprefixer.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/vivian/Documents/git/guoguofarm/src/css/test.css",
+		"/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/vivian/Library/Application Support/Sublime Text 2/Packages/Theme - Sodarized/README.md",
+		"/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/vivian/Documents/git/guoguofarm/src/templates/mesg-signin.html",
+		"/Users/vivian/Documents/git/guoguofarm/src/templates/add_shop.html",
+		"/Users/vivian/Documents/git/guoguofarm/src/fonts/icomoon.woff",
+		"/Users/vivian/Documents/git/guoguofarm/src/fonts/style.css",
+		"/Users/vivian/Documents/git/guoguofarm/signin.html",
+		"/Users/vivian/Documents/git/guoguofarm/.gulpfile.js.swp",
+		"/Users/vivian/Documents/git/guoguofarm/.gulpfile.js.swo",
+		"/Users/vivian/Documents/git/guoguofarm/add_shop.html",
+		"/Users/vivian/Documents/git/guoguofarm/sell_lists.html",
+		"/Users/vivian/Documents/git/guoguofarm/src/js/shop_home.js",
+		"/Users/vivian/Documents/git/guoguofarm/shop_home.html",
+		"/Users/vivian/Documents/git/guoguofarm/src/fonts2/style.css",
+		"/Users/vivian/Documents/git/guoguofarm/src/fonts3/style.css",
+		"/Users/vivian/Documents/git/guoguofarm/src/css/shop_home.css",
+		"/Users/vivian/node_modules/gulp/package.json",
+		"/Users/vivian/Documents/git/guoguofarm/index.html",
+		"/Users/vivian/Documents/git/guoguofarm/id-card.html",
+		"/Users/vivian/Downloads/icomoon 2/fonts/style.css",
+		"/Users/vivian/node_modules/weui/src/example/example.js",
+		"/Users/vivian/node_modules/weui/package.json",
+		"/Users/vivian/node_modules/weui/gulpfile.js",
+		"/Users/vivian/node_modules/gulp/index.js",
+		"/Users/vivian/Documents/git/guoguofarm/src/config.rb",
+		"/Users/vivian/Documents/git/guoguofarm/css/nav.css",
+		"/Users/vivian/Documents/git/guoguofarm/sass/nav.sass",
+		"/Users/vivian/Documents/git/guoguofarm/fonts/style.css",
+		"/Users/vivian/Documents/git/guoguofarm/css/main.css",
+		"/Users/vivian/Documents/git/Bootstrap_Metro_Dashboard/index.html",
+		"/Users/vivian/Documents/git/vs_resume/index.html",
+		"/Users/vivian/guoguo/Design/css/start.css",
+		"/Users/vivian/guoguo/Design/start.html",
+		"/Users/vivian/svn/guoguo/css/main.css",
+		"/Users/vivian/rfid/manage.py",
+		"/Users/vivian/rfid/base/templates/vivian.html",
+		"/Users/vivian/rfid/base/templates/base.html",
+		"/Users/vivian/Documents/git/Bootstrap_Metro_Dashboard/form.html",
+		"/Users/vivian/rfid/base/templates/warehouse-reduce.html",
+		"/Users/vivian/rfid/base/templates/warehouse-add.html",
+		"/Users/vivian/rfid/base/templates/sidebar.html",
+		"/Users/vivian/rfid/base/templates/rfid-account.html",
+		"/Users/vivian/rfid/base/templates/navbar.html",
+		"/Users/vivian/rfid/base/templates/on-off-shelves.html",
+		"/Users/vivian/rfid/base/templates/on-the-shelves.html",
+		"/Users/vivian/rfid/base/templates/off-the-shelves.html",
+		"/Users/vivian/Documents/git/rfid/base/static/css/navbar-responsive.css",
+		"/Users/vivian/Documents/git/Bootstrap_Metro_Dashboard/css/style-responsive.css",
+		"/Users/vivian/Documents/git/rfid/base/static/css/navbar.css",
+		"/Users/vivian/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/Wechat/1.2/3bd0e24414c6dd4814368ab86da8d621/Message/MessageTemp/1396db39aa7d82b6f6f9d9588b392e41/OpenData/Sesame/webpack.config.js",
+		"/Users/vivian/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/Wechat/1.2/3bd0e24414c6dd4814368ab86da8d621/Message/MessageTemp/1396db39aa7d82b6f6f9d9588b392e41/OpenData/Sesame/package.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"underline",
+			"css",
+			"src",
+			"=\"./",
+			"src",
+			"a",
+			"div",
+			"group",
+			"address",
+			"state_done",
+			"fonts",
+			"item",
+			"share",
+			"reduce",
+			"warehousing",
+			"option",
+			"style",
+			"id",
+			"file",
+			"important",
+			"767px",
+			"min-height"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "add_shop.html",
+					"settings":
+					{
+						"buffer_size": 5217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3754,
+								3754
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "attention_lists.html",
+					"settings":
+					{
+						"buffer_size": 5418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5388,
+								5388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2463.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "id-card.html",
+					"settings":
+					{
+						"buffer_size": 3448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							],
+							[
+								549,
+								549
+							],
+							[
+								601,
+								601
+							],
+							[
+								656,
+								656
+							],
+							[
+								711,
+								711
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1443.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mesg-signin.html",
+					"settings":
+					{
+						"buffer_size": 1020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "order_details.html",
+					"settings":
+					{
+						"buffer_size": 3414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							],
+							[
+								551,
+								551
+							],
+							[
+								603,
+								603
+							],
+							[
+								658,
+								658
+							],
+							[
+								708,
+								708
+							],
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "orders_list.html",
+					"settings":
+					{
+						"buffer_size": 5352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5322,
+								5322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "product.html",
+					"settings":
+					{
+						"buffer_size": 3322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2739,
+								2739
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sell_details.html",
+					"settings":
+					{
+						"buffer_size": 3271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1548
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 372.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "sell_lists.html",
+					"settings":
+					{
+						"buffer_size": 4811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2537,
+								2537
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 795.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 16995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16200,
+								16200
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6350.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/bh_core.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 1558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1340,
+								1340
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 292.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "shop.html",
+					"settings":
+					{
+						"buffer_size": 7895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								675,
+								675
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "shop_home.html",
+					"settings":
+					{
+						"buffer_size": 14811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								1373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "success-signin.html",
+					"settings":
+					{
+						"buffer_size": 1000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							],
+							[
+								552,
+								552
+							],
+							[
+								604,
+								604
+							],
+							[
+								658,
+								658
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/vivian/Documents/git/guoguofarm/src/sass/nav.scss",
+					"settings":
+					{
+						"buffer_size": 2487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2486,
+								2486
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1618.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 29349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29346,
+								29346
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11921.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/Users/vivian/Library/Application Support/Sublime Text 2/Packages/User/Autoprefixer.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/vivian/Documents/git/guoguofarm/src/templates/add_shop.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true
+}
