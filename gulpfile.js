@@ -81,6 +81,9 @@ var gulp = require('gulp'),
                 .pipe(concat('main.js'))
                 .pipe(sourcemaps.init({loadMaps: true}))
                 .pipe(sourcemaps.write('./'))
+                .pipe(rename( function( path ) {
+                    path.basename += '.min';
+                }))
                 .pipe(gulp.dest(config.outputdir+'/js'))
                 .pipe(connect.reload());
 
@@ -101,7 +104,7 @@ var gulp = require('gulp'),
         if ( !isProduct ) {
 
             return gulp.src('src/sass/*.scss')
-            .pipe(sourcemaps.init())
+            // .pipe(sourcemaps.init())
             .pipe(sass(config.outputStyle).on("error", sass.logError))
             .pipe(autoprefixer(config.autoprefixer))
             .pipe(gulp.dest(config.outputdir+ '/css'))
@@ -110,7 +113,7 @@ var gulp = require('gulp'),
         } else {
 
             return gulp.src('src/sass/*.scss')
-                .pipe(sourcemaps.init())
+                // .pipe(sourcemaps.init())
                 .pipe(sass(config.outputStyle).on("error", sass.logError))
                 .pipe(autoprefixer(config.autoprefixer))
                 .pipe(rename( function( path ) {
@@ -169,7 +172,8 @@ var gulp = require('gulp'),
         if( !isProduct ) {
             gulp.watch('src/templates/*.html', ['html']);
             gulp.watch('src/js/*.js', ['js']);
-            gulp.watch('src/sass/*.scss', ['rubySass']);
+            // gulp.watch('src/sass/*.scss', ['rubySass']);
+            gulp.watch('src/sass/*.scss', ['sass']);
         } else {
             return;
         }
