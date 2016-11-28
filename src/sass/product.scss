@@ -1,7 +1,3 @@
-@import "compass/css3/inline-block";
-@import "compass/css3/box-sizing";
-@import "compass/css3/border-radius";
-
 $product_name_fs: 14px;
 $product_name_margin: 0px;
 $product_name_height: $product_name_fs * 3;
@@ -49,7 +45,7 @@ body { min-width: 270px; }
 /* banner & name & shop-info */
 .product_banner {
     max-width: 100%;
-    background: #efe;  /* test */
+    background: #fff;
 
     > .banner_bg {
         width: 100%;
@@ -58,8 +54,15 @@ body { min-width: 270px; }
 }
 
 .product_tag {
-    font-size: $product_name_fs;
-    margin: 5px ;
+        text-align: left;
+        margin: .5rem 3%;
+
+    .product_name {
+        overflow: hidden;
+        color: #000;
+        height: $product_name_height;
+        font-size: $product_name_fs;
+    }
 
     .identificate {
         font-size: $identificate_fs;
@@ -74,21 +77,18 @@ body { min-width: 270px; }
         }
     }
 
-    .product_name {
-        overflow: hidden;
-        height: $product_name_height;
-    }
 
     .price {
-        font-size: .5rem;
+        margin: .5rem 0;
+        font-size: .8rem;
 
         .current_price {
-            color: red;
-            font-size: 1.2rem;
+            color: #dc4444;
+            font-size: 1.5rem;
         }
 
         .before_price {
-            color: #716C6C;
+            color: #716c6c;
             text-decoration: line-through;
         }
     }
@@ -101,7 +101,7 @@ body { min-width: 270px; }
 
     .come_fonts,
     .come_fonts::before,
-    .shop_name { @include inline-block; }
+    .shop_name { display: inline-block;; }
 
     .come_fonts::before,
     .shop_avater,
@@ -128,7 +128,8 @@ body { min-width: 270px; }
         height: $shop_avater_height;
         background: rgb(255,235,59);  /* test */
         border: 2px solid #fff;
-        @include border-radius(999px);
+        border-radius: 999px;
+
     }
 
     > .shop_name { font-size: 16px; }
@@ -144,16 +145,19 @@ body { min-width: 270px; }
         content: "";
     }
 }
+
 .detail_title {
-    margin: 10px;
     text-align: center;
+    padding: 10px;
+    margin: 10px;
     font-size: 16px;
-    color: #f00;
+    color: #E44318;
+    background-color: #eee;
 
     &:after{
         width: 20%;
-        border: 1px none #f00;
-        border-style: none none solid none;
+        height: .3rem;
+        border-bottom: 1px solid #E44318;
         margin: auto;
     }
 }
@@ -165,8 +169,8 @@ body { min-width: 270px; }
 
     &:after{
         width: 100%;
-        border: 1px none #000;
-        border-style: none none solid none;
+        height: 1rem;
+        border-bottom: 1px solid #eee;
     }
 
     > img { max-width: 100%; }

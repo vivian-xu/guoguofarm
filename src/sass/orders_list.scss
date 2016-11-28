@@ -1,5 +1,5 @@
-@import "compass/css3/inline-block";
-@import "compass/css3/box-sizing";
+
+
 
 $nav_fs: 16px;
 $nav_floatLeft_pad: .5rem;
@@ -8,10 +8,8 @@ $nav_center_marg: $nav_fs/2 + $nav_floatLeft_pad/1rem * 16px;
         /**** 与 order_details 共用开始 ****/
 body { min-width: 270px; }
 /* nav */
- // 问题 ？？？？？？？？？？？？？？
-.nav_center{ margin-left: - $nav_center_marg; }
 
-//  ul.center { text-align: center;} 使li整体在ul的中间，li.item1 {float:left ;},item1左浮动但是依旧占之前空间，则center的item 就不在整个nav宽度的中间了。需要移动 item1的一半。   ！！！！！ 有问题 ！！！！！
+.nav_center{ margin-left: - $nav_center_marg; }
 
 /* product_item  */
 .product_item {
@@ -38,7 +36,7 @@ body { min-width: 270px; }
 
 /* -- sum -- */
 .sum {
-    @include box-sizing ( border-box );
+    box-sizing: border-box;
     padding: 5px;
     border-bottom: 1px solid #eee;
 
@@ -118,7 +116,7 @@ body { min-width: 270px; }
         margin: 5px;
 
         .shop_contact,
-        .action_btn { @include inline-block; }
+        .action_btn { display: inline-block;; }
 
         .action_btn {
             padding: .25em .75em;

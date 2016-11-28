@@ -1,5 +1,5 @@
-@import "compass/css3/inline-block";
-@import "compass/css3/box-sizing";
+
+
 
 body { min-width: 277px; }
 #order_details { margin: 2.5rem 0 3.5rem 0; }
@@ -26,7 +26,7 @@ body { min-width: 277px; }
     margin: 5%;
 
     h3 {
-        @box-sizing( border-box );
+        box-sizing: border-box;
         border: 1px none #f5dddd;
         border-style: none none solid none;
     }

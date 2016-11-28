@@ -39,7 +39,7 @@ h2.sell_name,
     margin: 5%;
 
     h3 {
-        @box-sizing( border-box );
+        box-sizing: border-box;
         border-bottom: 1px solid #f5dddd;
     }
 

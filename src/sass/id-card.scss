@@ -9,11 +9,6 @@ $content_bg: rgb(244, 243, 221);
 $ht_top_log: 15%;
 $ht_content: 100%-$ht_top_log;
 
-
-@import "compass/css3/inline-block";
-@import "compass/css3/box-sizing";
-@import "compass/css3/transform";
-
 html { height: 100%;}
 .my_card{
     overflow: hidden;
@@ -26,12 +21,12 @@ html { height: 100%;}
     .front_card,
     .left_info,
     .right_code {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
     }
 
     .main-name,
     .center_log {
-        @include inline-block;
+        display: inline-block;;
     }
 
     .right_code,
@@ -188,7 +183,7 @@ html { height: 100%;}
     .arrow {
         width: 15%;
         margin-left: 68%;
-        @include transform( rotateZ(30deg));
+        transform: rotateZ(30deg);
     }
 
     .hidden-info {
@@ -206,8 +201,8 @@ html { height: 100%;}
     font-size: 0;
 
     .share-item {
-        @include inline-block;
-        @include box-sizing(border-box);
+        display: inline-block;;
+        box-sizing: border-box;
         width: 50%;
         text-align: center;
         background-color: $main-color-rgba;
