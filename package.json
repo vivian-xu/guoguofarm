@@ -12,6 +12,8 @@
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-jshint": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sass": "^2.2.0",
@@ -20,12 +22,16 @@
     "gulp-util": "^3.0.7",
     "http-server": "^0.9.0",
     "imagemin-pngquant": "^4.2.2",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "minimist": "^1.2.0",
+    "weui": "^0.4.0"
   },
   "scripts": {
     "start": "http-server -a 0.0.0.0 -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "make && make install"
+    "clear": "rm -rf dist/production",
+    "build": "npm run clear && gulp --env production",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
