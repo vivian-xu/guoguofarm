@@ -122,6 +122,25 @@ var gulp = require('gulp'),
                 .pipe(gulp.dest(config.outputdir+ '/css'));
         }
     });
+        //  合并部分 scss 文件
+        gulp.task('concatComCss', function(){
+            return gulp.src('src/common/*.scss')
+            .pipe(concat('common.scss'))
+            .pipe(sass(config.outputStyle).on("error", sass.logError))
+            .pipe(autoprefixer(config.autoprefixer))
+            .pipe(gulp.dest(config.outputdir+ '/css'))
+            .pipe(connect.reload());
+        });
+        //  将 jq 复制到 目标文件夹
+        gulp.task('moveJs', function() {
+            return gulp.src('src/common/**/*.js')
+                .pipe(gulp.dest(config.outputdir + '/js'))
+        });
+
+        gulp.task('font', function(){
+            return gulp.src('src/fonts2/*')
+                .pipe(gulp.dest(config.outputdir + '/fonts2/' ));
+        })
 
      gulp.task('rubySass', function() {
 
@@ -160,6 +179,7 @@ var gulp = require('gulp'),
             .pipe(gulpif( !isProduct, connect.reload()));
     });
 
+
 //  只压缩修改的图片,没有修改的图片直接从缓存文件读取
 // .pipe(cache(imagemin({
 //      progressive: true,
@@ -191,4 +211,4 @@ var gulp = require('gulp'),
         }
     });
 
-    gulp.task('default', ['html', 'js', 'sass', 'image', 'watch', 'connect']);
+    gulp.task('default', ['html', 'js', 'moveJs', 'sass', 'concatComCss', 'font', 'image', 'watch', 'connect']);
