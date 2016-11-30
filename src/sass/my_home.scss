@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'iconfont';  /* project id："191878" */
+  src: url('//at.alicdn.com/t/font_fj46d8d5f008jjor.eot');
+  src: url('//at.alicdn.com/t/font_fj46d8d5f008jjor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_fj46d8d5f008jjor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_fj46d8d5f008jjor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_fj46d8d5f008jjor.svg#iconfont') format('svg');
+}
+
 /*  content  */
 $products_name_height: 2.5;
 $_class_title_fs: 14px;
@@ -6,47 +15,61 @@ $product_name_fs: 14px;
 $product_name_height: $product_name_fs * 3;
 $product_item_height: 220px;
 
-html { font-size: 14px; }
-body { min-width: 270px; }
-#my_home { text-align: center; }
+html {
+    font-size: 14px;
+}
+body {
+    min-width: 270px;
+}
+#my_home {
+    padding-bottom: 100px;
+}
 
 .nav-link,
 .nav-name,
-#my_home .shop_name { color: #fff; }
+#my_home .shop_name {
+    color: #fff;
+}
 
-.nav_center { margin-left: -16px; }
+.nav_center {
+    margin-left: -16px;
+}
 
 #my_home .shop_name {
     padding: 3rem 0 2.5rem 0;
-    background-color: rgb(238, 113, 113);
+
+    background-color: #bae4ba;
 }
 
 .shop_name {
     text-align: center;
-
     > .avater {
         width: 4rem;
         height: 4rem;
         margin: 1em 0 .5rem 0;
-        background: rgb(255,235,59);  /* test */
+
         border: 2px solid #fff;
         border-radius: 999px;
+        background: rgb(255,235,59);  /* test */
     }
-
-    >.name {
+    > .name {
         font-size: 16px;
-        font-weight: bold;
     }
 }
 
 .weui_grid {
     &:link,
     &:visited,
-    &:hover {color: #000; }
-    &:active { color: rgb(238, 113, 113);}
+    &:hover {
+        color: #000;
+    }
+    &:active {
+        color: rgb(238, 113, 113);
+    }
 }
 
 .icon_center {
-    text-align: center;
     font-size: 25px;
+
+    text-align: center;
 }

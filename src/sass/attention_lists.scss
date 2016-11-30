@@ -1,70 +1,78 @@
 /* nav  */
-.order_nav.navbar { min-width: 190px; }
-.nav-top .nav_center { margin-left: 32px; }
-.item_downMenu .menu_item {
-    left: 0;
-    width: 110%;
-    background: rgba(239, 112, 112, 0.9);
 
-    li { border: 1px none rgba(220, 155, 155, 0.8); }
+.order_nav.navbar {
+  min-width: 190px;
+}
+
+.nav-top .nav_center {
+  margin-left: 32px;
+}
+
+.item_downMenu .menu_item {
+  left: 0;
+  li {
+    border: 1px none rgba(245, 156, 156, 0.8)
+  }
 }
 
 .item_downMenu .nav-link,
-.item_downMenu .class_link { font-size: 16px; }
+.item_downMenu .class_link {
+  font-size: 14px;
+}
 
 /* product_item  */
+
 .product_item {
-    display: block;
-    display : -webkit-flex;
-    display : -moz-box;
-    display : -ms-flexbox;
-    display : flex;
-    -webkit-align-items: flex-start;
-       -moz-box-align: flex-start;
-        -ms-flex-align: flex-start;
-            align-items: flex-start;
-    padding: 10px 0;
-    border: 1px none #eee;
-    border-style: none none solid none;
-
-    .product_avater {
-        width: 35%;
-        max-width: 300px;
-        margin-right: 5%;
+  // display: block;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border: 1px none #eee;
+  border-style: none none solid none;
+  .product_avater {
+    width: 35%;
+    max-width: 300px;
+    margin-right: 5%;
+  }
+  .info_right {
+    overflow: hidden;
+    flex: 1;
+    color: #000;
+    .product_name {
+      display: block;
+      margin-right: 20%;
+      font-size: 14px;
+      font-weight: bold;
     }
-
-    .info_right {
-        overflow: hidden;
-        -webkit-flex : 1;
-          -moz-box-flex: 1;
-             -ms-flex: 1;
-                 flex: 1;
-        color: #000;
-
-        .product_name {
-            display: block;
-            margin-right: 20%;
-            font-size: 14px;
-            font-weight: bold;
-        }
-    }
+  }
 }
+
 
 /*
     --- order_list ---
  */
 
-[class*= "role_"] {
-    font-weight: 800;
-    border: 1px solid #ddd;
+[class*="role_"] {
+  border: 1px solid currentColor;
+  padding: 0 2px;
+  border-radius: 3px;
 }
 
-.role_one { color: rgb(9, 50, 224);}
-.role_two { color: rgb(255, 1, 1); }
-.role_three { color: rgb(0, 212, 0); }
+.role_one {
+  color: rgba(102, 153, 255, 1);
+}
+
+.role_two {
+  color: rgba(255, 80, 80, .5);
+}
+
+.role_three {
+  color: rgba(0, 153, 51, 1);
+}
 
 .order_products {
-    overflow: hidden;
-    margin: 2.5rem 5px 3.5rem;
-    font-size: 12px;
+  // overflow: hidden;
+  margin: 5px 5px ;
+  padding-bottom: 40px;
+  font-size: 12px;
 }

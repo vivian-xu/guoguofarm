@@ -1,132 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
+
 <head>
-    <!--- start : Meta  -->
-    <meta charset="utf-8">
-    <meta name="description" content="果果庄园，店铺, 关注，列表">
-    <!-- start : Mobile Specific  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- end : Mobile Specific  -->
-    <!-- end : Meta -->
-	<title>关注列表</title>
-    <!-- start : css -->
-    <link rel="stylesheet" href="../css/weui.min.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../fonts2/style.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/attention_lists.css">
-    <!-- end : css -->
-    <!-- start: javascript -->
-    <script type="text/javascript" src="../js/libraries/jquery.min.js"></script>
-    <!-- end: javascript -->
+  <!--- start : Meta  -->
+  <meta charset="utf-8">
+  <meta name="description" content="果果庄园，店铺, 关注，列表">
+  <!-- start : Mobile Specific  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- end : Mobile Specific  -->
+  <!-- end : Meta -->
+  <title>关注列表</title>
+  <!-- start : css -->
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../fonts2/style.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/attention_lists.css">
+  <!-- end : css -->
+  <!-- start: javascript -->
+  <script type="text/javascript" src="../js/libraries/jquery.min.js"></script>
+  <!-- end: javascript -->
 </head>
+
 <body>
-    <nav class="order_nav navbar nav-top">
-        <ul class="nav-list center">
-            <li class="nav-item float_left">
-                <a id="nav-back" class="nav-link" href="#">
-                    <span class="icon-chevron-thin-left"></span>
-                </a>
-            </li>
-            <li class="nav-item nav_center">
-                <h1 class="nav-name">
-                    关注列表
-                </h1>
-            </li>
-            <li class="nav-item float_right item_downMenu down">
-            	<a class="nav-link" href="#">筛选
-            		<span class="icon-chevron-thin-down down_icon"></span>
-                </a>
-                <ul class="menu_item" style="display: none;">
-                    <li class="item1"><a href="#" class="class_link">全部 </a></li>
-                    <li class="item2"><a href="#" class="class_link">客商 </a></li>
-                    <li class="item2"><a href="#" class="class_link">代办 </a></li>
-                    <li class="item2"><a href="#" class="class_link">零售 </a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <section id ="attention_lists">
-        <div class="order_products">
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_three float_right"> 零售商 </span>
-                    <span class="product_name"> 我是果园果果园果园果园果园果isis果园果园果园果园</span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_two float_right"> 客商 </span>
-                    <span class="product_name"> 我是果园果园果园果园果园果园果园果园果园果园果园</span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_one float_right"> 代办 </span>
-                    <span class="product_name"> 我是果园果园果园果园果园 </span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_three float_right"> 零售商 </span>
-                    <span class="product_name"> 我是果园果园果园果园果园 </span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_one float_right"> 代办 </span>
-                    <span class="product_name"> 我是果园果园果园果园果园 </span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-            <a class="product_item" href="shop_home.min.html">
-                <img src="../images/products1.jpg" class="product_avater">
-                <p class="info_right clearfix">
-                    <span class="role_one float_right"> 代办 </span>
-                    <span class="product_name"> 我是果园果园果园果园果园 </span>
-                    主营: <span class=""> 苹果 </span><br/>
-                    联系人: <span class="price"> 老王 </span><br/>
-                    地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
-                </p>
-            </a>
-        </div>
-    </section>
-        <!-- This is footer-navbar  -->
-        <nav id="footer-nav" class="navbar nav-footer">
-            <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link current_visit" href="attention_lists.min.html"><span class="icon-heart block-icon"></span>关注列表
+  <section id="attention_lists">
+    <div class="order_products">
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_three float_right"> 零售商 </span>
+          <span class="product_name"> 我是果园果果园果园果园果园果isis果园果园果园果园</span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_two float_right"> 客商 </span>
+          <span class="product_name"> 我是果园果园果园果园果园果园果园果园果园果园果园</span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_one float_right"> 代办 </span>
+          <span class="product_name"> 我是果园果园果园果园果园 </span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_three float_right"> 零售商 </span>
+          <span class="product_name"> 我是果园果园果园果园果园 </span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_one float_right"> 代办 </span>
+          <span class="product_name"> 我是果园果园果园果园果园 </span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+      <a class="product_item" href="shop_home_sp.min.html">
+        <img src="../images/products1.jpg" class="product_avater">
+        <p class="info_right clearfix">
+          <span class="role_one float_right"> 代办 </span>
+          <span class="product_name"> 我是果园果园果园果园果园 </span> 主营: <span class=""> 苹果 </span>
+          <br/> 联系人: <span class="price"> 老王 </span>
+          <br/> 地址: <span class=""> 陕西省渭南合阳甘井镇 </span>
+        </p>
+      </a>
+    </div>
+  </section>
+  <!-- This is footer-navbar  -->
+  <nav id="footer-nav" class="navbar nav-footer">
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link current_visit" href="attention_lists.min.html"><span class="icon-heart block-icon"></span>关注列表
                     </a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop_home.min.html"><span class="icon-shop block-icon"></span>我的店铺
+      <li class="nav-item"><a class="nav-link" href="shop_home_sp.min.html"><span class="icon-shop block-icon"></span>我的店铺
                     </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="icon-cart block-icon"></span>购物车
+      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-cart block-icon"></span>购物车
                     </a></li>
-                    <li class="nav-item"><a class="nav-link" href="my_home.min.html"><span class="icon-user block-icon"></span>我
+      <li class="nav-item"><a class="nav-link" href="my_home.min.html"><span class="icon-user block-icon"></span>我
                     </a></li>
-                </ul>
-        </nav>
+    </ul>
+  </nav>
 </body>
 <script type="text/javascript" src="../js/nav.min.js"></script>
+
 </html>

@@ -1,6 +1,9 @@
 $fs-mainName: 30px;
-$fs-logo : 30px;
-$fs-body : 14px; /* my-name  */
+$fs-logo: 30px;
+$fs-body: 14px;
+
+/* my-name  */
+
 $main_color: #EF7070;
 $main-color-rgba: rgba(239, 79, 79, 0.8);
 $hover-color: rgba(234, 49, 49, 0.8);
@@ -8,220 +11,204 @@ $active-color: rgba(244, 53, 48, 1);
 $content_bg: rgb(244, 243, 221);
 $ht_top_log: 15%;
 $ht_content: 100%-$ht_top_log;
+html {
+  height: 100%;
+}
 
-html { height: 100%;}
-.my_card{
-    overflow: hidden;
-    height: 100%;
-    min-width: 310px;
-    background-color: $content_bg;
-    font-size: 14px;
-
-    .top,
-    .front_card,
+.my_card {
+  overflow: scroll;
+  height: 100%;
+  min-width: 310px;
+  background-color: $content_bg;
+  font-size: 14px;
+  .top,
+  .front_card,
+  .left_info,
+  .right_code {
+    box-sizing: border-box;
+  }
+  .main-name,
+  .center_log {
+    display: inline-block;
+    ;
+  }
+  .right_code,
+  .img_logo {
+    text-align: center;
+  }
+  .top {
+    height: $ht_top_log;
+    min-height: 40px;
+    background-color: $main_color;
+  }
+  .front_card {
+    text-align: left;
+    width: 100%;
+    height: 50%;
+    min-height: 221px;
     .left_info,
     .right_code {
-        box-sizing: border-box;
+      padding: 2% 3%;
+      height: $ht_content;
+      @media screen and(max-width: 330px) {
+        padding: 2% 1%;
+      }
     }
+    .front_info {
+      width: 100%;
+      .left_info {
+        width: 60%;
+        .main-name {
+          line-height: 39px;
+          font-size: $fs-mainName;
+          font-weight: bold;
+        }
+        .doing {
+          font-size: 14px;
+          line-height: 1.5;
+          .hidden_doing {
+            @media screen and(max-width: 350px) {
+              display: none;
+            }
+          }
+        }
+        .pingin {
+          @extend .doing;
+          font-weight: bold;
+        }
+        .user_info.weui_cells {
+          margin-top: 2%;
+          background-color: $content_bg;
+          font-size: 16px;
+          &:before,
+          &:after {
+            display: none;
+          }
+          @media screen and(max-width: 380px) {
+            font-size: 14px;
+          }
+        }
+        .weui_cell {
+          padding: .5rem 0 0 0;
 
-    .main-name,
-    .center_log {
-        display: inline-block;;
+          &:before,
+          &:after {
+            @extend .user_info.weui_cells:before;
+          }
+
+          [class*="icon-"]:before {
+            margin-right: 1.5px;
+          }
+        }
+      }
+      .right_code .logo {
+        margin: 5px 0;
+        width: 39%;
+        max-width: 164px;
+      }
+      .right_code .my-code {
+        margin: .5rem 0;
+        width: 30%;
+        max-width: 114px;
+      }
     }
-
-    .right_code,
-    .img_logo {
-        text-align: center;
-    }
-
+  }
+  .back_card {
+    height: 50%;
+    font-size: 14px;
     .top {
-        height: $ht_top_log;
-        min-height: 40px;
-        background-color: $main_color;
+      padding: 2px;
+        font-size: 12px ;
     }
-
-    .front_card {
-        text-align: left;
-        width: 100%;
-        height: 50%;
-        min-height: 221px;
-
-        .left_info,
-        .right_code {
-            padding: 2% 3%;
-            height: $ht_content;
-
-            @media screen and(max-width: 330px) {
-                padding: 2% 1%;
-            }
-        }
-
-        .front_info {
-            width: 100%;
-
-            .left_info {
-                width: 60%;
-
-                .main-name {
-                    line-height: 39px;
-                    font-size: $fs-mainName;
-                    font-weight: bold;
-                }
-
-                .doing {
-                    font-size: 14px;
-                    line-height: 1.5;
-
-                    .hidden_doing {
-                        @media screen and(max-width: 350px) {
-                            display: none;
-                        }
-                    }
-
-                }
-
-                .pingin {
-                    @extend .doing;
-                    font-weight: bold;
-                }
-
-                .user_info.weui_cells {
-                    margin-top: 2%;
-                    background-color: $content_bg;
-                    font-size: 16px;
-
-                    &:before, &:after {
-                        display: none;
-                    }
-
-                    @media screen and(max-width: 380px) {
-                        font-size: 14px;
-                    }
-
-                    .weui_cell {
-                        padding: .5rem 0 0 0;
-
-                        &:before, &:after {
-                            @extend .user_info.weui_cells:before;
-                        }
-
-                        [class*="icon-"]:before {
-                            margin-right: 1.5px;
-                        }
-                    }
-                }
-            }
-
-            .right_code .logo {
-                    margin: 5px 0;
-                    width: 39%;
-                    max-width: 164px;
-            }
-
-            .right_code .my-code {
-                    margin: .5rem 0;
-                    width: 30%;
-                    max-width: 114px;
-            }
-        }
+  }
+  .back_info {
+    height: $ht_content;
+    .img_logo,
+    .center_log,
+    .big_logo {
+      vertical-align: middle;
     }
-
-    .back_card {
-        height: 50%;
-        font-size: 14px;
-
-        .top {
-            padding: 2px;
-            line-height: 1.3;
-        }
-
-        .back_info{
-            height: $ht_content;
-
-            .img_logo,
-            .center_log,
-            .big_logo {
-                vertical-align: middle;
-            }
-
-            .img_logo {
-                width: 100%;
-                height: 85%;
-
-                .center_log {
-                    height: 100%;
-                    width: 0;
-                 }
-
-                .big_logo {
-                    width: 90%;
-                    max-width: 455px;
-                }
-            }
-
-            .contact_info {
-                padding: 0 1%;
-                height: 15%;
-            }
-        }
+  }
+  .img_logo {
+    width: 100%;
+    height: 70%;
+    .center_log {
+      height: 100%;
+      width: 0;
     }
+    .big_logo {
+      width: 90%;
+      max-width: 455px;
+    }
+  }
+  .contact_info {
+    padding: 0 1%;
+    height: 15%;
+  }
 }
 
 .share-hidden {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-
-    .arrow {
-        width: 15%;
-        margin-left: 68%;
-        transform: rotateZ(30deg);
-    }
-
-    .hidden-info {
-        position: relative;
-        font-size: 26px;
-        color: #b21f24;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  .arrow {
+    width: 15%;
+    margin-left: 68%;
+    transform: rotateZ(30deg);
+  }
+  .hidden-info {
+    position: relative;
+    font-size: 26px;
+    color: #b21f24;
+  }
 }
 
 .footer-share {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0;
 
-    .share-item {
-        display: inline-block;;
-        box-sizing: border-box;
-        width: 50%;
-        text-align: center;
-        background-color: $main-color-rgba;
-        font-size: 1rem;
+  .share-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    background-color: $main-color-rgba;
+    font-size: 12px;
 
-        &:not(:last-child) {
-            border: 1px none #fff ;
-            border-right-style: solid;
-        }
-        &:link { background-color: $main-color-rgba};
-        &:visited { background-color: $main-color-rgba};
-        &:hover { background-color: $hover-color};
-        &:active { background-color: $active-color};
+    &:not(:last-child) {
+      border: 1px none #fff;
+      border-right-style: solid;
+    }
 
-        .link {
-            display: inline-block;
-            padding: .7rem 0;
-            width: 100%;
-            color: #fff;
-        }
+    &:link {
+      background-color: $main-color-rgba;
+    }
+    &:visited {
+      background-color: $main-color-rgba;
+    }
+    &:hover {
+      background-color: $hover-color;
+    }
+    &:active {
+      background-color: $active-color;
+    }
+  }
+
+    .link {
+      display: inline-block;
+      padding: .7rem 0;
+      width: 100%;
+      color: #fff;
     }
 }
